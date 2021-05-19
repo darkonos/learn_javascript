@@ -35,5 +35,27 @@
 
 // decompte(10);
 
+/*FONCTION CONSTRUCTEUR */
 
+//Création d'une fonction constructeur
+function Utilisateur(nom, age, mail) {
+    
+    this.nom = nom;
+    this.age = age;
+    this.mail = mail;
 
+    this.bonjour = function(){
+
+        console.log('Bonjour je suis ' +this.nom[0] +' j\'ai ' +this.age + ' ans !');
+    }
+}
+
+//Création d'un nouvel objet florent en appelant la fonction construteur Utilisateur avec le mot clé 'new'
+let florent = new Utilisateur(['florent', 'bernard'], 46, 'fred.bern9@gmail.com');
+
+//Appel de la méthode bonjour
+florent.bonjour();
+
+//Utilisation dans le DOM
+document.getElementById('p1').innerHTML = 'Nom complet: ' +florent['nom'];
+document.getElementById('p2').innerHTML = 'prénom : ' +florent['nom'][0];
