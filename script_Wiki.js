@@ -192,7 +192,11 @@ Chaque membre d’un objet est toujours composé d’un nom et d’une valeur qu
 
 Avantages de l'orienté objet: Permet d'otenir des scripts mieux organisés, meilleurs lisibilité et maintenabilité.
 
-This : sert à faire référence à l’objet qui est couramment manipulé.
+This : fait référence à l’objet et va permettre de définir et d’initialiser les propriétés et méthodes de l'objet créé..
+
+Constructeur : C'est une fonction qui permet de créer des objets semblables avec le mot clé 'new'
+lorsqu’on définit un constructeur, on utilise par convention une majuscule au début du nom de la fonction
+
 
 /*......Les class........*/   
 
@@ -201,7 +205,7 @@ Création d'une class nommée "episode"
 class episode {
     constructor(title, episode, hasBeenWatched) {   //Appel de la fonction 'constructor' qui devra accepter trois arguments
 
-        this.title = title;  //Le mot clé 'this' fait référence à la nouvelle instance
+        this.title = title;  //Le mot clé 'this' fait référence à episode
         this.episode = episode; 
         this.hasBeenWatched = hasBeenWatched;
     }
@@ -214,7 +218,7 @@ let myEpisode = new episode(firstEpisode, secondEpisode, thirdEpisode);
 
 /*......Les Arrays........*/
 
-let episodes = ["firtsEpisode", "seconEpisode", "thirdEpisode"];
+let episodes = ["firtsEpisode", "secondEpisode", "thirdEpisode"];
 
 let howManyEpisode = episodes.length;
 
