@@ -1,2 +1,2 @@
 # learn_javascript
-Apprendre javascript
+Formation complète de Javascript 
