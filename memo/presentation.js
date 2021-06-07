@@ -6,5 +6,7 @@
 . Le Javascript sert à créer de l'intéractivité entre la page et l'utilisateur
 */
 
+//Le Javascript est facile à apprendre mais difficile à maitriser
+
 //Placer le code JavaScript dans un fichier séparé
 <script src="monScript.js" async></script>

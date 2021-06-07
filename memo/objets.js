@@ -15,8 +15,7 @@ Avantages de l'orienté objet: Permet d'otenir des scripts mieux organisés, mei
 
 Constructor :
 ..............
-
- Méthode qui permet de créer des objets semblables avec le mot clé 'new'
+Méthode qui permet de créer des objets semblables avec le mot clé 'new'
  
 
 This : permet de définir et d’initialiser les propriétés et méthodes de l'objet créé..

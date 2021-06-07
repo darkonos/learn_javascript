@@ -2,10 +2,25 @@
 /*.........DOM............
 
  Le DOM est une interface de programmation pour des documents HTML ou XML qui représente le document (la page web actuelle) 
- sous une forme qui permet aux langages JavaScript d’y accéder et d’en manipuler le contenu et les styles.
+ sous une forme qui permet aux langages JavaScript d’y accéder et d’en manipuler le contenu et les styles mais aussi pour:
+ - Ajouter, modifier, supprimer des éléments dans le document HTML.
+
+API (Application Programming Interface) : interface, grâce à laquelle un logiciel fournit des services à des clients.
+
+Les API Javascript sont classés en deux catégories :
+
+Les API intégrées aux navigateurs web 
+- API DOM pour du développement web pour manipuler le HTML et le CSS d’une page
+- API de Geolocation qui va nous permettre de définir des données de géolocalisation
+- API Canvas qui permet de dessiner et de manipuler des graphiques dans une page
+
+Les API externes proposées par certains logiciels ou sites
+- API Google Map qui permettent d’intégrer et de manipuler des cartes dans les pages web 
+- API Twitter qui permet d’afficher une liste de tweets sur un site
+- API YouTube qui permet d’intégrer des vidéos sur un site
 
 Pour accéder à l'API (Application Programming Interface) du DOM, il suffit d'utiliser l'objet 'document' associé à des 'méthodes'
-pour sélectionner un ou des éléments de la page HTML pour faire différentes actions dessus.
+pour nous permettre de manipuler le HTML et le CSS d’une page web.
 
 /* 1. Les méthodes pour sélectionner un élément HTML
 ................................................... */
@@ -97,10 +112,55 @@ Ses propriétés sont disponibles en lecture et écriture */
 
 const h1 = document.getElementsByTagName('h1')[0];
 
-//Récupérer la classe de l'élément HTML et la modifier
-console.log(h1.className);
+//Récupérer la classe de l'élément HTML 'h1'
+console.log(h1.className); //lecture du contenu de la propriété h1
 
-h1.className = 'test'; Modification
+h1.className = 'test'; //On modifie le nom de la classe h1 'title' par 'test'
+
+//Ajouter du contenu textuelle à un élément HTML
+const article = document.getElementsByTagName('article')[0];
+
+article.textContent = 'Bonjour';
+
+/* 6. Méthodes pour selectionner ou modifier un attribue HTML
+.......................................................... */
+const article = document.getElementsByTagName('article')[0];
+
+const id = article.getAttribute('data-id'); //Selection de l'attribue perso 'data-id'
+
+article.setAttribute('data-id', 33) //Modification de l'attribue 'id'
+
+/* 7. Créer un nouvel element (HTML ou textuel) pour l'ajouter au document HTML
+............................................... */
+const article = document.getElementsByTagName('article')[0];
+
+const a = document.createElement('a'); //création d'un élément lien
+
+//Avant de l'ajouter au document HTML, on modifie les différents attribus de l'élément 'a' et on lui ajoute du contenu textuelle
+a.href = 'test.html' 
+a.textContent = 'mon super lien'
+
+//Ajouter le nouvel élément créé à l'arbre du DOM (document HMTL) ici, on ajoute un élément enfant à article (à la fin)
+article.appendChild(a);
+
+//Ajouter le nouvel élément au début de article
+article.insertBefore(a, article.firstChild);
+
+//création d'un noeud textuel et l'ajouter au document
+const text = document.createTextNode('Bonjour à tous !!!');
+
+article.appendChild(text); //On l'ajout au document
+
+/* 8. Rétirer un noeud 
+......................... */
+const article = document.getElementsByTagName('article')[0];
+
+article.removeChild(le noeud à retirer);
+
+
+
+
+
  
 
 
