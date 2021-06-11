@@ -5,11 +5,11 @@
  sous une forme qui permet aux langages JavaScript d’y accéder et d’en manipuler le contenu et les styles mais aussi pour:
  - Ajouter, modifier, supprimer des éléments dans le document HTML.
 
-API (Application Programming Interface) : interface, grâce à laquelle un logiciel fournit des services à des clients.
+API (Application Programming Interface) : interface (ensemble de code), grâce à laquelle un logiciel fournit des services à des clients.
 
 Les API Javascript sont classés en deux catégories :
 
-Les API intégrées aux navigateurs web 
+Les API intégrées aux navigateurs web qui sont rassemblées dans le BOM (Browser Object Model) fournit des propriétés et des méthodes permettant de réaliser des opérations complexes
 - API DOM pour du développement web pour manipuler le HTML et le CSS d’une page
 - API de Geolocation qui va nous permettre de définir des données de géolocalisation
 - API Canvas qui permet de dessiner et de manipuler des graphiques dans une page
@@ -26,7 +26,7 @@ pour nous permettre de manipuler le HTML et le CSS d’une page web.
 ................................................... */
 
 /*La méthode getElemmentById('id') , doit être utilisé impérativement avec l'objet 'document' , les autres peuvent être utilisés 
-  avec un élément HTML selectionner précédement.é
+  avec un élément HTML selectionner précédement.
   Pour les utiliser, on les stock dans une variable */
 
 //Sélectionner un élément HTML Par son ID
@@ -46,24 +46,27 @@ articleTagName = document.getElementsByTagName('article')[1]; //ici l'indice ind
 articleTagName.style.border = '8px solid red'; //Action effectué
 
 //Par sa  classe
-const title = document.getElementsByClassName('title')[0]; 
+const title = document.getElementsByClassName('title')[0];
 title.style.background = 'grey';  //Action effectué
 
-//récupérer le paragraphe en passant par un élément HTML sélectionner précédement (mon-article dans articleID)
-const p = articleID.querySelector('p');
-p.style.background = 'blue'; //Action effectué 
+//récupérer le paragraphe en passant par un élément HTML sélectionner précédement (mon-article)
+//On peut l'utiliser avec toutes les méthodes sauf avec getElementById
+const articleID = document.getElementById('mon-article'); //mon-article sélectionner précédement
 
-//selectionner tous les liens
+const p = articleID.querySelector('p'); //Selection du sélecteur CSS 'p'
+p.style.background = 'grey'; //Action effectué 
+
+//selectionner tous les liens de la page
 const a = document.querySelectorAll('a'); //on peut aussi mettre un indice 
 
-a[1].style.fontSize = '25px'; //indice pour le 2e lien
+a[1].style.fontSize = '25px'; //indice pour le 2e lienk   
 
 
 /* 2. Raccourci pour sélectionner l'élément body
 ...................................... */
 
 const body = document.body;
-body.style.background = 'grey'; //action effectué
+body.style.background = 'grey'; //action effectuék
 
 
 /* 3. La Propriété style

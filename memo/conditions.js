@@ -19,7 +19,7 @@ tests en dessous vont être ignorés.
 //Les opérateurs de comparaison
   .............................
 
-== Permet de tester l’égalité sur les valeurs
+== Permet de tester l’égalité sur les valeurs (car le simple = sert à l'affectation de variable)
 === Permet de tester l’égalité en termes de valeurs et de types
 != Permet de tester la différence en valeurs
 <> Permet également de tester la différence en valeurs
@@ -33,7 +33,7 @@ tests en dessous vont être ignorés.
 l’opérateur de comparaison fourni et renvoyer le booléen true si la comparaison est
 validée ou false si elle ne l’est pas.
 
-//Les opérateurs logique
+//Les opérateurs logique 
   ......................
 
 AND (&&), OR(||), NO(!)

@@ -1,0 +1,18 @@
+****Extentions utiles ****
+
+(Crtl+Shift+p)
+
+- Prettier : pour formater le code (Crtl+Shift+p) ensuite tapez 'format document'
+- quokka.js : 
+- open in browser
+- VS Color Picker : palette de couleur
+- peek CSS : permet de regarder une classe CSS sans la chercher partout dans le fichier : Ctrl+clique de la sourie
+
+Le mode ZEN
+...........
+Permet de se concentrer sur le code des fichiers ouverts
+
+- Ctrl+K ensuite Z   //2* echap pour quitter
+- Ctrl+tab : pour naviguer entre les fichiers ouverts
+- Ctrl+p : rechercher des fichiers
+- Ctrl +ù : ouvre un terminal
