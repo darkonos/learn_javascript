@@ -1,0 +1,20 @@
+
+-(KEY SSH)
+..........
+Git base toute sa gestion d’authentification sur le mécanisme des clés SSH.
+- générer notre duo de clés SSH 
+1.Ouvrez Git Bash, et exécutez la commande :
+$ ssh-keygen -t rsa -b 4096 -C "johndoe@example.com" 
+2.Appuyez sur Entrée !
+3.Entrez un mot de passe et la clé ssh est crée !
+Pour la trouver, il suffit d'aller à l'adresse : C:\Users\VotreNomD'Utilisateur\, et d'afficher les dossiers masqués.
+
+id_rsa : votre clé privée
+id_rsa.pub : votre clé publique
+
+- Ajouter la clé publique au compte gitHub
+Aller dans Settings, SSH and GPG keys Puis sur New SSH Key 
+Choisissez un titre et collez votre clé SSH public.
+
+
+-(KEY GPG)

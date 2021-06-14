@@ -1,0 +1,35 @@
+
+Contribuer à un projet OPEN SOURCE
+..................................
+
+On appelle ça faire une pull request (PR).
+
+Le premier réflexe à avoir est de regarder dans la documentation du projet si des recommandations 
+sont précisées sur comment faire une pull request. Certains peuvent demander d'utiliser un format
+spécifique pour les messages de commit et de PR, d'ajouter des tests, etc. En général, vous trouverez 
+ces recommandations dans le fichier README, avec un intitulé "Contributing" ou "Pull requests". 
+
+Beaucoup de projets sur GitHub sont en anglais, vous devrez donc souvent faire vos contributions en Anglais.
+
+
+Step 1 – Récupérez le repo auquel vous souhaitez contribuer
+...........................................................
+
+1. Faire un fork(copie du repo en question sur votre compte GitHub) du repo auquel vous souhaitez contribuer.
+2. clonez votre copie depuis GitHub sur votre machine
+
+Step 2 – Faites vos modifications
+.................................
+
+1.Se placer dans le repo et créer une nouvelle branche pour faire les modifications
+2.Rédiger des commits claires et précis en anglais
+3.Envoyez vos modifications sur GitHub en faisant de votre nouvelle branche :
+$ git push origin my-new-feature (ne pas faire git push origin master, ce n'est pas notre branch)
+
+
+Step 3 – Proposez vos modifications au projet
+.............................................
+
+placez-vous sur votre fork GitHub, sur votre nouvelle branche, et cliquez sur "Compare & pull request".
+
+rédiger un message pour présenter votre proposition de modifications en anglais à l'auteur du projet.

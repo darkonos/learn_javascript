@@ -3,8 +3,8 @@
 (Crtl+Shift+p)
 
 - Prettier : pour formater le code (Crtl+Shift+p) ensuite tapez 'format document'
-- quokka.js : 
-- open in browser
+- quokka.js : affiche le résultat en direct 
+- open in browser : 
 - VS Color Picker : palette de couleur
 - peek CSS : permet de regarder une classe CSS sans la chercher partout dans le fichier : Ctrl+clique de la sourie
 

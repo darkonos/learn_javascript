@@ -1,0 +1,15 @@
+
+3. CREER UN REPOSITORY
+   ...................
+- Se rendre sur git-hub et créer un nouveau repository public (privé c'est payant)
+- cocher l'option README pour avoir un premier fichier afin de pouvoir le cloner directement.
+- Récupérer le code par le lien HTTPS ou SSH(https://help.github.com/articles/connecting-to-github-with-ssh/)
+
+A).Pointer vers un dépot distant(DEP: nom court pour appeler le dépot.Appelez-le comme bon vous semble)
+.....................................................................................................
+git remote add DEP https://github.com/Le_depot_distant..
+
+B). CLonez le dépot en local (Maintenant que votre dépôt distant est lié à votre dépôt local)
+   .........................................................................................
+A partir de git-hub, une option propose un lien SSH, HTTPS ou Subversion.
+$ git clone "Adresse de lien du projet"

@@ -1,0 +1,53 @@
+
+
+Cas1 : vous avez modifié votre branche master mais que vous n'avez pas encore fait le commit.
+.............................................................................................
+
+
+Faire:
+$ git status (pour voir vos fichiers qui ont été modifiés mais qui n'ont pas encore été commités)
+
+il faut créer une remise (va permettre de mettre vos modifications de côté, le temps de créer votre nouvelle branche )
+
+$ git stash
+
+créer un nouvelle branche et se positionner dessus
+
+enfin, appliquer la remise afin de récupérer les modifications
+$git stash apply
+
+
+Si  vous avez créé plusieurs remises, et que la dernière n'est pas celle que vous souhaitiez appliquer, 
+il est possible d'appliquer une autre remise.
+
+regarder la liste des remises
+git stash list
+
+Appliquer la remise choisi:
+$ git stash apply stash@{0}
+
+           
+Cas2 : vous avez modifié votre branche master et vous avez fait le commit
+.........................................................................
+
+1.Récupérer le hash du commit 
+git log
+2.supprimer de la branche master votre dernier commit
+git reset --hard HEAD^
+3.créer une nouvelle branche et se positionner dessus
+git checkout -b maBranch
+4.appliquer le commit sur notre nouvelle branche
+git reset --hard ca83a6df
+
+
+Cas3 : changer le message du dernier commit réalisé
+...................................................
+
+$ git commit --amend -m "Votre nouveau message de commit"
+Et on vérifie avec  git log
+
+cas4 : J’ai oublié un fichier dans mon dernier commit
+.....................................................
+
+git add FichierOublie.txt
+git commit --amend --no-edit

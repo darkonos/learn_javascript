@@ -1,0 +1,19 @@
+MOTS CLES
+.........
+
+-master : branche principale d'un repository Git
+-Remote : toute machine interne ou externe peuvent servir de remote comme(git hub), 
+-gist : Une façon de partager son code avec GitHub
+-clonage : Action de récupérer un repository sur sa machine
+-origin : le remote par défaut
+-push : envoyer ses modifications sur un remote
+-pull : récupérer les dernières modifications faites sur un remote
+-log : voir les modifications effectuées
+-merge : fusion
+-fork : dupliquer un repository et en faire une copie sur notre compte git-hub
+-Pull Request : consiste à proposer une suite de commits pour qu'ils soient acceptés dans un projet open source 
+-git blame : commande qui permet de savoir qui a modifié une ligne donnée d'un fichier
+- .gitignore : fichier qui permet d'ignorer des fichiers pendant un push
+-git stash : mettre de côté ses modifications de façon temporaire sans faire de commit
+-stage : index (on ajoute les fichiers à l'index)
+-HEAD : référence de la branche courante

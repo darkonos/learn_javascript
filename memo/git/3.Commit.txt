@@ -1,0 +1,40 @@
+
+3. COMMIT (SNAPSHOT) : suite de modification accompagné d'un message.
+.....................................................................
+
+Le commit le plus récent de la branche de travail s'appelle HEAD (la tête).
+
+- Ajout d'un fichier 
+$ git add lefichier
+
+- Pour voir les changements
+$ git status
+
+- faire un commit (snapshot) pour surveiller les changements
+$ git commit -m "Mon message"
+
+- Demander à git de mettre à jour les fichiers déja existant dans son index
+$ git commit -am "Mon message" (on peux faire -am ou (-a -m) quand on a déja ajouté le fichier à l'index)
+
+*Nota : à chaque modification du fichier on répète l'étape 3
+
+
+-Voir la partie du code modifié avant un commit
+$ git diff 
+$ git diff  dossier spécifique du fichier
+
+- Voir l'historique des modifications (plus récent à l'ancien)
+$ git log
+
+- Se positionner sur un commit donné
+$ git checkout "N° du SHA du commit"
+
+
+-On ne peut pas vraiment "supprimer" un commit mais on peut créer un nouveau commit qui fait l'inverse du précédent
+$ git revert "N° du SHA du commit"
+
+-Modifier le message de votre dernier commit que si vous n'avez pas encore pushé votre commit sur l'origine !
+$ git commit --amend -m "Mon message"
+
+-Annuler tous les changements que je n'ai pas encore commités
+$ git reset --hard
