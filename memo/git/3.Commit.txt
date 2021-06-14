@@ -29,6 +29,8 @@ $ git log
 - Se positionner sur un commit donné
 $ git checkout "N° du SHA du commit"
 
+- Revenir sur la branche principale 
+$ git checkout main
 
 -On ne peut pas vraiment "supprimer" un commit mais on peut créer un nouveau commit qui fait l'inverse du précédent
 $ git revert "N° du SHA du commit"
