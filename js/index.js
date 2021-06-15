@@ -1,18 +1,20 @@
-/* Projet TODO Formation Javascript complète */
+ 
 
 // Notre application
 
 
 //DOM selection
 
-const list = 'élément #list';
-const input = 'élément #input';
-const add = 'élément #input';
-const clear = 'élément #clear';
-const url = 'élément #url';
-const load = 'élément #load';
+const list = document.getElementById('list');
+const input = document.getElementById('input');
+const add = document.getElementById('add');;
+const clear = document.getElementById('clear');
+const url = document.getElementById('url');
+const load = document.getElementById('load');
 
 //On récupère le tableau des tâches deja existantes
 const tasks = ['Salle de sport', 'Tourner des tutos'];
 
 
+//Action effectué pour test
+ load.style.background = 'green';
