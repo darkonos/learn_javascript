@@ -49,11 +49,11 @@ articleTagName.style.border = '8px solid red'; //Action effectué
 const title = document.getElementsByClassName('title')[0];
 title.style.background = 'grey';  //Action effectué
 
-//récupérer le paragraphe en passant par un élément HTML sélectionner précédement (mon-article)
+//récupérer l'élément paragraphe en passant par un élément HTML sélectionner précédement (mon-article)
 //On peut l'utiliser avec toutes les méthodes sauf avec getElementById
-const articleID = document.getElementById('mon-article'); //mon-article sélectionner précédement
+const articleID = document.getElementById('mon-article'); // Elément 'mon-article' sélectionner précédement
 
-const p = articleID.querySelector('p'); //Selection du sélecteur CSS 'p'
+const p = articleID.querySelector('p'); //Selection de l'élément 'p'
 p.style.background = 'grey'; //Action effectué 
 
 //selectionner tous les liens de la page
@@ -66,7 +66,7 @@ a[1].style.fontSize = '25px'; //indice pour le 2e lienk
 ...................................... */
 
 const body = document.body;
-body.style.background = 'grey'; //action effectuék
+body.style.background = 'grey'; //action effectué
 
 
 /* 3. La Propriété style
@@ -79,7 +79,7 @@ title[0].style.color = 'blue';
 /* 4. Méthodes pour sélectionner un élément par rapport à un autre élément
 ............................................................ */
 
-//La propriété children permet de selectionner les enfants d'un élément qui est déja sélectionner (ici les enfants de article)
+//La propriété children permet de selectionner les enfants d'un élément qui est déja sélectionné (ici les enfants de article)
 
 //code HTML
 <article id="mon-article" data-id="25">
@@ -89,7 +89,7 @@ title[0].style.color = 'blue';
     </article>
 
 
-const article = document.getElementById('mon-article');
+const article = document.getElementById('mon-article'); //Elément selectionné 
 
 //Selection de l'élément enfant depuis l'élément parent
 const p = article.children[1] //la const p récupère un tableau avec les 3 enfants de article(h1, p, a), ici on selectionne le 2e enfant

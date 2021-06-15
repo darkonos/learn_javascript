@@ -1,7 +1,9 @@
 /*......LES OBJETS........
 
+Les objets partargent deux caractéristiques : état (propriétés) et comportement (méthodes).
+
 Le développement orienté objet correspond à une autre façon d’envisager et d’organiser
-son code en groupant des éléments cohérents au sein d’objets
+son code en groupant des éléments cohérents au sein d’objets 
 
 - Propriété   : variable qui appartient à un objet
 - Méthode     : fonction qui appartient à un objet
@@ -13,9 +15,18 @@ Chaque membre d’un objet est toujours composé d’un nom et d’une valeur qu
 
 Avantages de l'orienté objet: Permet d'otenir des scripts mieux organisés, meilleurs lisibilité et maintenabilité.
 
-Constructor :
+//Les 3 type sd'objets 
+......................
+  1.Les objets natifs   : Peu importe ou les programmes javascript seront exécutés, ils auront ces objets(Math, Array, Boolean...)
+  2.Les objets d'hôtes  : Sont fournis par l'environnement hôte
+  3.Les objets que vous créez dans vos programmes 
+
+Constructeur :
 ..............
-Méthode qui permet de créer des objets semblables avec le mot clé 'new'
+C'est une fonction pour décrire la façon dont un objet doit être créé
+un constructeur va créé des objets similaires avec le mot clé 'new'
+Chaque objet créé est connu comme une 'instance' de ce type d'objet.
+
  
 
 This : permet de définir et d’initialiser les propriétés et méthodes de l'objet créé..
@@ -29,10 +40,10 @@ Instance : Objet créé avec le mot clé 'new' appartenant la class 'nomDeLaClas
 
 En Javascript tout est objet et il n'éxiste pas de classes. L'héritage se fait au moyens de prototypes.
 
-IMPORTANT : pour accéder aux propriétés et méthodes de l'objet:
+IMPORTANT : pour accéder aux propriétés et méthodes de l'objet :
 
  - A l'intérieur du littéral d'objet, on utilise le mot clé 'this' pour faire référence aux propriétés et méthodes de l'objet.
- - A l'extérieur, on utilise l'objet par rapport à son identifiant + la 'notation pointé' ou 'bracket'.
+ - A l'extérieur, on utilise l'objet par rapport à son identifiant + la 'notation pointé' ou 'bracket' [].
 
 
 
