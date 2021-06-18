@@ -16,5 +16,3 @@ id_rsa.pub : votre clé publique
 Aller dans Settings, SSH and GPG keys Puis sur New SSH Key 
 Choisissez un titre et collez votre clé SSH public.
 
-
--(KEY GPG)

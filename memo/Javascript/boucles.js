@@ -34,6 +34,9 @@ exécuté au moins une fois.
 Contient trois « phases » à l’intérieur du couple de parenthèses : une phase d’initialisation, une phase de test (condition de sortie)
  et une phase d’itération (généralement une incrémentation). 
 
+ Utilisation : Quand on connait le nombre de tour que doit faire la boucle.
+
+
 //L'instruction continue
   ......................
 
