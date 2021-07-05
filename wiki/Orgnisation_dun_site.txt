@@ -1,0 +1,40 @@
+
+1.MAQUETTER LE DESIGN
+......................
+
+- Comprendre les besoins du client
+- Faire appel à un graphiste
+- Chercher L'inspiration sur https://html5up.net/
+
+2.ORGANISER LE CONTENU HTML
+...........................
+
+- Distinguer les principaux blocs sur la maquette
+- Utiliser de préférence, les balises structurantes qui ont du sens
+- Placez tout le contenu de la page dans une grande balise <div> ayant pour id="main_wrapper" (bloc_page)
+  elle va permettre de fixer facilement les dimensions de la page et de centrer le site à l'écran.
+
+
+3.METTRE EN FORME LE CSS
+.........................
+
+L'objectif est d'obtenir un résultat se rapprochant de la maquette. Car vous ne pourrez jamais obtenir
+un résultat identique au pixel près.Il y aura des différences sur un autre navigateur.
+
+Procéder en plusieurs étapes :
+
+- Polices personnalisées.
+
+- Définition des styles principaux de la page (largeur du site, fond, couleur par défaut du texte).
+
+- En-tête et liens de navigation.
+
+- Bannière.
+
+- Section principale du corps de page, au centre.
+
+- Pied de page (footer).
+
+- Le responsive du site.
+
+

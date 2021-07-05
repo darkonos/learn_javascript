@@ -1,0 +1,34 @@
+L'orienté objet:
+Il existe 2 type de programmation:
+- La programmation précédurale
+- La programmation orienté objet
+
+Programmation orienté objet est proche du raisonnement humain.
+
+- classe: c'est le plan, l'idée. Chaque classe possède ses propriétés et méthodes.
+  En javascript on a la classe : array, date, string..
+- objet: une entité physique ou non
+- Propriété : attribut ou caractéristiques de l'objet (les données)
+- méthode : le comportement de l'objet ou fonction(les actions de l'objet) (marcher, courrir)
+  instance : Générer une copie à partir d'une classe. 
+
+LES NOTIONS A CONNAITRE :
+- Abstraction : 
+  se focaliser sur l'essentiel et ignorer tous les détails (une table).
+  On sait la visualiser sans quel soit forcement décrit.
+  En orienté objet l'abstraction c'est :
+  Si le projet est la création d'un compte bancaire, on choisit les propriétés
+  les plus essentiel à la création de ce compte : nom prénom N°compte etc.. et pas les autres
+
+- Polymorphisme : 
+  exemple : reécrire une méthode dans une classe enfant que l'on a hérité
+  d'une classe parent. On l'utilise rarement en orienté objet.
+
+- Héritage : 
+  réutiliser le code d'une classe éxistante. C'est une sous classe de la classe précédente
+  . C'est une manière de réutiliser du code éxistant dans une autre classe. 
+
+- Encapsulation : regrouper les propriétés et méthodes au sein d'une même unité
+  (la classe). On peut restreindre l'accès à la classe et révélé uniquement un 
+  nombre réduit d'informations aux autres éléments qui participent à l'application.
+

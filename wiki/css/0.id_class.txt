@@ -1,0 +1,10 @@
+
+-id: Chaque id doit avoir une valeur unique dans une même page.
+
+-class: pour définir des styles généraux et communs à plusieurs éléments dans une même page. Comme nous pouvons donner une
+même class à plusieurs éléments.
+
+On peut tout à fait fournir plusieurs attributs à un élément HTML et notamment un
+attribut class et un attribut id à un élément.
+
+Une bonne façon de faire est d'attribuer plusieurs class à un élément.
