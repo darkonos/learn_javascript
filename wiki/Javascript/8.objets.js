@@ -1,6 +1,6 @@
 /*......LES OBJETS........
 
-Les objets partargent deux caractéristiques : état (propriétés) et comportement (méthodes).
+Les objets partargent deux caractéristiques : état (propriétés ou attributs) et comportement (méthodes ou procédure).
 
 Le développement orienté objet correspond à une autre façon d’envisager et d’organiser
 son code en groupant des éléments cohérents au sein d’objets 
@@ -15,7 +15,7 @@ Chaque membre d’un objet est toujours composé d’un nom et d’une valeur qu
 
 Avantages de l'orienté objet: Permet d'otenir des scripts mieux organisés, meilleurs lisibilité et maintenabilité.
 
-//Les 3 type sd'objets 
+//Les 3 types d'objets 
 ......................
   1.Les objets natifs   : Peu importe ou les programmes javascript seront exécutés, ils auront ces objets(Math, Array, Boolean...)
   2.Les objets d'hôtes  : Sont fournis par l'environnement hôte

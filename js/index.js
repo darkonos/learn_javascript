@@ -3,7 +3,7 @@
 // Notre application
 
 
-//DOM selection
+//DOM selection des id dans le html
 
 const list = document.getElementById('list');
 const input = document.getElementById('input');
@@ -16,5 +16,5 @@ const load = document.getElementById('load');
 const tasks = ['Salle de sport', 'Tourner des tutos'];
 
 
-//Action effectué pour test
+//Action effectué sur id 'load'
  load.style.background = 'green';
