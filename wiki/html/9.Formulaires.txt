@@ -1,0 +1,122 @@
+Voir mdn ou devdocs.io
+
+L'élément HTML <form> représente une section d'un document qui contient des contrôles interactifs 
+permettant à un utilisateur d'envoyer des données à un serveur web.
+
+1.EX :
+......
+<form method="post" action="traitement.php">
+   <p>
+       <label for="pseudo">Votre pseudo</label> : <input type="text" name="pseudo" id="pseudo" />
+   </p>
+</form>
+
+Les attributs 
+.............
+
+method : indique par quel moyen les données vont être envoyées
+get : limitée à 255 caractères
+post :  un grand nombre d'informations
+action : l'adresse de la page ou du programme qui va traiter les informations (serveur PHP)
+
+2.Zones de saisie basiques
+........................
+
+ - zone de texte monoligne
+ <form></form>
+ input : pour insérer une zone de texte
+ - Attributs
+ type : pour définir la valeur (text, date, search, email, range, color, radio, checkbox, password, number, tel, url, ...)
+ name : définir un nom pour l'élément
+ id : lier la zone de text au label
+ label : le libellé
+ - Attributs supplémentaires
+size : agrandir le champ 
+maxlenght : limiter le nombre de caractères que l'on peut saisir
+value : pré-remplir le champ avec une valeur par défaut
+placeholder : donner une indication sur le contenu du champ
+
+3.Zones de saisies complexes
+.............................
+
+ - zone de texte multiligne
+<textarea> </textarea>
+- Attributs
+taille : rows et cols, en css avex width et height
+préremplissage : on n'utilise pas l'attribue value, on écrit le texte entre <textarea> </textarea>
+
+- Zones de saisie enrichies 
+<input type="email" /> : demander à saisir une adresse e-mail
+<input type="url" /> :  demander à saisir une adresse absolue
+<input type="tel" /> : saisie de numéros de téléphone 
+<input type="number" /> : permet de saisir un nombre entier
+<input type="range" /> : permet de sélectionner un nombre avec un curseur
+<input type="color" /> : permet de saisir une couleur
+<input type="date" /> : Permet de saisir une date. Différents types de champs de sélection de date existent : time, week, month...(voir mdn)
+<input type="search" /> : Permet de créer un champ de recherche 
+
+- Les cases à coher
+...................
+<input type="checkbox"> : créer une case à cocher
+<input type="radio"> 
+
+- Les zones d'options
+.....................
+permet de faire un choix (et un seul) parmi une liste de possibilités.
+elles doivent être organisées en groupes. Les options d'un même groupe possèdent le même nom (name)
+mais chaque option doit avoir une valeur (value) différente.
+EX : 
+<form method="post" action="traitement.php">
+   <p>
+       Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br />
+       <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">Moins de 15 ans</label><br />
+       <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">15-25 ans</label><br />
+       <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">25-40 ans</label><br />
+       <input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Encore plus vieux que ça ?!</label>
+   </p>
+</form>
+
+
+- Les listes déroulantes
+........................
+<select> </select>
+
+EX :
+
+<form method="post" action="traitement.php">
+   <p>
+       <label for="pays">Dans quel pays habitez-vous ?</label><br />
+       <select name="pays" id="pays">
+           <option value="france">France</option>
+           <option value="espagne">Espagne</option>
+           <option value="italie">Italie</option>
+           <option value="royaume-uni">Royaume-Uni</option>
+           <option value="canada">Canada</option>
+           <option value="etats-unis">États-Unis</option>
+           <option value="chine">Chine</option>
+           <option value="japon">Japon</option>
+       </select>
+   </p>
+</form>
+
+Si vous voulez qu'une option soit sélectionnée par défaut, utilisez cette fois l'attribut selected:
+<option value="canada" selected>Canada</option>
+
+Vous pouvez aussi grouper vos options avec la balise <optgroup> </optgroup>
+
+- Finaliser et envoyer le formulaire
+....................................
+- Regrouper les champs
+<fieldset></fieldset>
+- Sélectionner automatiquement un champ avec autofocus
+<input type="text" name="prenom" id="prenom" autofocus />
+- Rendre un champ obligatoire avec required
+<input type="text" name="prenom" id="prenom" required />
+
+- Le bouton d'envoi
+<input type="submit" value="Envoyer" />
+
+
+
+
+

@@ -1,0 +1,31 @@
+Voir mdn ou devdocs.io
+
+ELEMENTS TEXTUELS BODY
+
+Ajouter du texte aléatoire (lorem ipsum):
+lorem*Nbr_de_ligne
+
+h(1 à 5) : titre important à moins important. 
+
+utilisé en css
+b : bold
+i : italic
+u : underline
+
+-strong : en gras (plus important que le reste du texte
+-mark : mettre en valeur certains mots
+-em : en italic
+-p : paragraphe
+
+Les listes
+-ul : liste non ordonnée 
+-ol : liste ordonnée
+-li : élément de liste
+
+Caractères réservés (entité)
+-voir entity dans developer.mozilla.org
+& = &amp;
+- div : Pour représenter un bloc.
+- span : pour représenter du contenu phrasé(mots, phrases).
+- section : représente une section générique d'un document, par exemple un groupe de contenu thématique. Une section commence généralement avec un titre.
+

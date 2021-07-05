@@ -1,0 +1,90 @@
+Voir mdn ou devdocs.io
+.........................
+
+0.LES BALISES DE TYPE BLOCK ET INLINE
+.....................................
+Les boites peuvent être de différents types. Le but étant de séparer les différents éléments.
+Tous les éléments HTML sont représentés sous fore de blocs. Ce bloc peut être de plusieurs type:
+
+display: block; : l'élément prend toute la largeur possible de la page et force les autres éléments à aller à la ligne.
+il possède une largeur et une hauteur en % (pour le design) ou en px (pour une dimension plus précise).
+display: inline; : l'élément prend juste l'espace dont il a besoin pour le contenu (ex: un paragraphe) et met l'élément suivant à la suite sur la même ligne. Ce sont
+Tous les éléments qui entourent du texte (span, strong, lien..)
+display: none : rien n'est affiché.   
+display: inline-block : Met les blocs sur une ligne et permet d'attribuer une largeur et hauteur. 
+
+Les blocs : sont les uns en-dessous des autres. On peut aussi les imbriquer les uns à l'intérieur des autres. <Section> contient des blocs <aside>
+La balise inline<a></a>, elle, se trouve à l'intérieur d'une balise block et le texte vient s'insérer sur la même ligne.
+
+Infos Pour les liens:
+.....................
+
+pour que les liens soient collés, quand ils sont en display:inline ou display:inline-block,
+il ne faut aucun espace entre les liens dans le code HTML. 
+
+1.LES DIMENSIONS
+..............
+Un bloc a des dimensions précises en % et en px
+-width et height représentent la largeur et la hauteur du contenu des blocs.
+
+Minimum et maximum
+...................
+min-width: largeur minimale ;
+min-height: hauteur minimale ;
+max-width: largeur maximale ;
+max-height: hauteur maximale.
+
+on peut demander à ce que les paragraphes occupent 50% de la largeur et exiger qu'il fassent
+au moins 400 pixels de large dans tous les cas.
+
+2.LES MARGES (en pixels)
+............
+-padding : Taille de la marge intérieure
+-margin : Taille de la marge extérieure
+
+Liste pour margin:
+margin-top: marge extérieure en haut ;
+margin-bottom: marge extérieure en bas ;
+margin-left: marge extérieure à gauche ;
+margin-right: marge extérieure à droite.
+
+Liste pour padding:
+padding-top: marge intérieure en haut ;
+padding-bottom: marge intérieure en bas ;
+padding-left: marge intérieure à gauche ;
+padding-right: marge intérieure à droite.
+
+Autres façons de spécifier les marges padding et marging:
+margin: 2px 0 3px 1px; (haut, droite, bas, gauche).
+
+ATTENTION à La fusion de marge
+Lorsque deux éléments adjacents(qui précède ou qui suit) ont des marges, c'est la marge la plus grande qui l'emporte.
+Cela fonctionne s'il n'y a rien entre les deux éléments.
+
+2.CENTRER LES BLOCS
+...................
+Pour centrer, il faut respecter les règles suivantes :
+- width: 350px; /* On a indiqué une largeur (obligatoire) */
+- margin: auto; /* On peut donc demander à ce que le bloc soit centré avec auto */
+
+3.CONTROLER LES DEPASSEMENTS DU TEXTE (overflow)
+.....................................
+Choisir un width et height pour le texte
+Si vous voulez que le texte ne dépasse pas des limites du paragraphe:
+overflow: visible, hidden, scroll, auto;
+
+visible: si le texte dépasse les limites de taille, il reste visible et sort volontairement du bloc.
+hidden: si le texte dépasse les limites, il sera tout simplement coupé. On ne pourra pas voir tout le texte.
+scroll:  le texte sera coupé s'il dépasse les limites. le navigateur mettra en place des barres de défilement pour qu'on puisse lire l'ensemble du texte.
+auto: c'est le navigateur qui décide de mettre ou non des barres de défilement
+hidden: le texte est donc coupé (on ne peut pas voir la suite)
+
+-Couper les textes trop larges (word-wrap)
+..........................................
+Si vous devez placer un mot très long dans un bloc, qui ne tient pas dans la largeur.
+d'utiliser cette fonctionnalité dès qu'un bloc est susceptible de contenir du texte saisi par des utilisateurs.
+word-wrap: break-word;
+
+
+
+

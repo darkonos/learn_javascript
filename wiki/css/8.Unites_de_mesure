@@ -1,0 +1,21 @@
+Voir mdn ou devdocs.io
+......................
+
+LA TAILLE DES POLICES
+- pixel pour  les écrans
+- mm, cm, inch pour l'impression
+- % pour redimenssionner un élément
+
+UTILISATION DU CSS QUE POUR L'IMPRESSION
+On va utilisé link avec l'attribut media
+<link href="style.css" rel="stylesheet" media="">
+media="screen" pour les écrancs d'ordinateur
+media="print" pour l'impression (on appelera notre fichier print.css)
+
+Dans le cas de l'impression, on ne travail plus avec des pixels mais plutot avec des documents.
+Une feuille au format A4 en générale. On doit donc utilisé des unités réelles (mm, cm, in, pt, pc)
+
+On utilise le % quand on crée des structures complexes.
+
+
+

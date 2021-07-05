@@ -1,0 +1,27 @@
+
+5. FUSIONNEZ DES BRANCHES
+
+Se placer sur la branch Master
+$ git merge la_branch
+
+
+
+9. MERGE (fusionner)
+....................
+- Fusionner deux ou plusieurs historiques de développement ensemble. un editeur s'ouvrira pour entrer un message
+-Il faut se placer dans le fichier principal et ensuite fusionner
+$ git merge fichier_a_fusionner
+
+ATTENTION: 
+Si  2 dev modifie une ligne de code en même temps
+et que git se sait pas quoi faire. les codeurs se contactent pour prendre la decision.
+
+-Supprimer une branch (après avoir merger la branch)
+$ git branch -d ma_branch
+-Supprimer une branch (sans vouloir merger la branch)
+git branch -D ma_branch 
+
+- VISUALIZATION
+...............
+Outils graphique permettant de visualiser les commit créé
+http://onlywei.github.io/explain-git-with-d3/

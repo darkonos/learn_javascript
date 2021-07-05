@@ -1,0 +1,38 @@
+Voir mdn ou devdocs.io
+
+Permet de représenter les données sous forme de tableau
+
+1.Tableau simple
+
+Balise de base :
+<table> : creation d'un tableau
+<caption> : Titre du tableau
+<th> (header): la ligne d'entête.
+<tr> (row): créer une nouvelle ligne
+<td> (data): créer une nouvelle cellule
+
+
+
+CSS:
+border-collapse: collapse : une seule bordure entre deux cellules 
+border-collapse: separate : les bordures seront dissociées (valeur par défaut)
+
+caption-side : changer la position du titre
+caption-side: top : le titre sera placé au-dessus du tableau (par défaut)
+caption-side: bottom : le titre sera placé en dessous du tableau.
+
+2. Tableau structuré (Respectez l'ordre)
+
+- En-tête <thead></thead>
+- Pied de page <tfoot></tfoot>
+- Corps <tbody></tbody>
+
+Attributs
+- Fusionner les colonnes
+colspan : indiquant le nombre de colonnes sur lesquelles s'étend la cellule.
+- Fusionner les lignes
+ex: <td colspan="2">
+rowspan : étendre la cellule sur plusieurs ligne, au lieu d'étendre sur plusieurs colonnes.
+
+
+    

@@ -1,0 +1,15 @@
+
+Git rebase a le même objectif que Git merge. Ces deux commandes permettent de transférer les changements
+d'une branche à une autre.  Seule la manière de procéder va différer.
+
+ 1.Reécrire l’historique avec l’interactif Rebase
+.................................................
+permet de déplacer les commits un à un en ayant la possibilité de les modifier. 
+
+
+ 2.Modifiez l'ordre des commits
+...............................
+
+ 3.Modifiez les messages de validation
+......................................
+

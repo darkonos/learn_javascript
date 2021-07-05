@@ -1,0 +1,17 @@
+Pour mettre en forme le design, il faut procéder en plusieurs étapes.
+
+1.Définition des Polices personnalisées
+-Font-face
+
+2.Définition des styles principaux de la page
+-body (width, margin..)
+
+3.Les titres (h1)
+
+4.En-tête et liens de navigation (header)
+
+5.Les sections
+
+6.Pied de page (footer)
+
+

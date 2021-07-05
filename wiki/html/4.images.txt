@@ -1,0 +1,35 @@
+Voir mdn ou devdocs.io
+
+1.Inserer une image:
+....................
+<a src="image.png" alt="description de l'image">
+
+2.Les formats utilisées :
+..........................
+
+Perser à reduire le poids des images pour un chargement plus rapide.
+- jpg, pour les photos, 
+- png, pour les logos et formes, il supporte la transparence et un très bon niveau de détail.
+- gif, moins utilisé, supporte l'animation
+- svg, utilisé pour les logos
+
+3.Transformer l'image en lien cliquable pour l'afficher en grande taille:
+.........................................................................
+
+Les images doivent se trouver obligatoirement à l'intérieur d'un paragraphe
+
+<p>
+<a href="img/image.jpg" target="_blank"><img src="img/image_mini.jpg" alt="image" title="Cliquez pour agrandir" /></a>
+</p>
+
+4.Les figures 
+.............
+
+Ce sont des éléments (images, codes source, citations..) qui donne du sens au texte.
+
+Une figure est le plus souvent accompagnée d'une légende. 
+
+<figure>
+    <img src="images/blocnotes.png" alt="Bloc-Notes" />
+    <figcaption>Le logiciel Bloc-Notes</figcaption>
+</figure>

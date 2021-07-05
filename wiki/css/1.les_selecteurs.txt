@@ -1,0 +1,53 @@
+Voir mdn ou devdocs.io
+
+Cascading style sheets :
+Les style sont appliqués de haut en bas.
+
+LES SELECTEURS DE BASE
+.......................
+
+Sélector, property, value
+Sélecteur parent, enfant etc..
+Il faut savoir, que par défaut même si on n'écrit pas de css, les navigateurs injecte du CSS.
+
+LES SELECTEURS AVANCES 
+.......................
+
+* : Sélectionne tous les éléments
+
+1.LES COMBINATEURS:
+...................
+
+2 niveaux est largement suffisant 
+
+table h1 : tous les h1 à l'intérieur de table
+table > h1 : Selectionne tous les enfants h1 direct de table
+td h2 : Selectionne les h2 qui sont les enfants direct de td. Cela fonctionne avec les sélecteurs de class et id.
+h2 + P : selectionne le premier élément(seulement un élément) paragraphe situé après h2.
+h2 ~ p : Tous les paragraphes directement après h2
+
+2.LES SELECTEURS D'ATTRIBUTS (voir mdn):
+......................................
+
+Permet de sélectionner un élément par rapport à ses attributs
+a[href="https://monsite.fr"] : permet de donner un style à tous les liens possédant un attribut https. Mais il est recommandé 
+d'utiliser les class à la place. 
+a[title] : selectionne tous les liens qui ont un attribue title
+a[title="Cliquez ici"] : Idem, mais l'attribut doit en plus avoir exactement pour valeur « Cliquez ici ».
+a[title*="ici"] : Idem, l'attribut doit cette fois contenir dans sa valeur le mot « ici » (peu importe sa position).
+
+3.LES PSEUDO-CLASSES (voir mdn) :
+.................................
+
+selector:pseudo-class, property, value
+
+nth-child() permet de prendre un élément précis en fonction de sa position dans le code html
+exemple: .element:nth-child(2) signifie que je prend le second élément du code
+
+Les plus utilisés sont:
+a:over : quand on survole les liens
+a:visited : quand le lien a été cliquer
+a:focus : pour la navigation au clavier 
+article:first-child : premier enfant(sélecteur) de son conteneur(ici article)
+article:first-of-type : premier élément de ce type
+

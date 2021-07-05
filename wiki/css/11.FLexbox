@@ -1,0 +1,101 @@
+Voir mdn ou devdocs.io
+......................
+
+Nota : il est préférable de réaliser le schéma sur papier et ensuite le construire avec Flexbox.
+......
+
+On utilise Flexbox souvent dans
+
+ 1. les entête (header), car on a des alignements spécifique à faire.
+ 2. La navigation (nav ul), avoir une liste d'objets qui forment une barre horizontale.
+ 3. 
+
+
+Le principe de la mise en page avec Flexbox est d'avoir un conteneur, avec plusieurs éléments à l'intérieur.
+On peux agencer les boites comme bon nous semble. 
+Imaginez un carton dans lequel vous rangez plusieurs objets : c'est le principe !
+
+Avantage : on ne touche plus au code HTML qui reste le même depuis le début.
+
+.......Sur une même page web, vous pouvez sans problème avoir plusieurs conteneurs......
+
+conteneur : bloc (container) qui contient tous les autres blocs (items).
+Le conteneur (container) est une balise HTML (div), et les éléments à l'intérieur sont d'autres balises HTML (div, p,...) qu'on
+appelle des items.
+
+items : blocs à l'intérieur
+
+Container ("flex container") = parent
+Items ("flex items") = enfants
+
+Par défaut les blocs se placent les uns à la suite des autres.
+
+Avec flexbox on peut modifier ce comportement.
+
+1.Agencer les éléments en mode flexbox à l'intérieur du conteneur
+display: flex; (les blocs se positionnent les uns à la suite des autres sur une même ligne) et le container prend 100% de la largeur de la page.
+Les éléments extérieur seront placés à la ligne.
+display: inline-flex; le container prend juste la taille des éléments à l'intérieur. Les éléments extérieur seront placés à coté.
+
+INFOS: On peut imbriquer un container(avec ses items) dans un autre container qui devient le parent.
+
+2.Gérer toutes les directions
+flex-direction: row (affichage horizontal) elle va définir l'axe principal (main axis), le sens de distribution des items va aller de gauche à droite.
+flex-direction: row-reverse; (l'ordre des éléments sont inversés), le sens de distribution va aller de droite à gauche.
+flex-direction: column; (affichage verticale)
+flex-direction: column-reverse; (l'ordre des éléments sont inversés)
+
+3.Retour à la ligne
+flex-wrap: nowrap : pas de retour à la ligne (par défaut
+flex-wrap: wrap; (Autoriser les éléments à revenir à la ligne s'ils n'ont plus d'espace)
+flex-wrap: wrap-reverse : les éléments vont à la ligne lorsqu'il n'y a plus la place en sens inverse
+
+flex-flow: est une propriété raccourcie pour les propriétés flex-direction et flex-wrap.
+flex-flow: row wrap;
+voir mdn pour les autres raccourcie.
+
+A RETENIR:
+- Si vos éléments sont organisés horizontalement, l'axe secondaire est l'axe verticale.
+- Si vos éléments sont organisés verticalement, l'axe secondaire est l'axe horizontale.
+
+4.Organiser les items horizontalement
+justify-content: flex-start (Aligner les items au début)
+justify-content: flex-end (Aligner les items à la fin)
+justify-content: center (Aligner les items au centre)
+justify-content: space-between (Attribue le même espacement entre chaque items, les items aux extrémités seront presque collés au container)
+justify-content: space-around (Etirer sur tout l'axe, cad il y a de l'espace entre eux et laisse un peu d'espace sur les extrémités)
+justify-content: space-evenly (Attribue le même espacement entre chaque items) sur l'axe principal.
+
+5.Organiser les items verticalement
+align-items : stretch; (aligner sur tous l'axe) valeur par défaut. Agrandit les éléments pour qu'il remplisse la hauteur du conteneur.
+Attention, stretch est utilisé que si les items n'ont pas de hauteur.
+align-items: flex-start (aligner au début) 
+align-items: center (aligner au centre)
+align-items: flex-end (aligner à la fin)
+align-items: baseline (aligner sur une ligne de base)
+
+6.Centrer les éléments horizontalement et verticalement au sein du conteneur
+margin: auto
+
+7. Si les éléments occupent plusieurs lignes, indiquer comment ils seront espacés
+align-content: flex-start (les éléments sont placés au début)
+align-content: flex-end (les éléments sont placés à la fin)
+align-content: center (les éléments sont placés au centre)
+align-content: space-between (les éléments seront séparés avec de l'espace entre eux)
+align-content: space-around (les éléments seront séparés avec de l'espace entre eux et avec de l'espace au début et à la fin)
+align-content: stretch (les éléments sétirent afin d'occuper toute l'espace)
+
+8.Modifier l'odre des éléments comme bon vous semble (ils ne dépendront plus de l'ordre qu'ils apparaissent dans le html)
+Numéroter le éléments dans l'ordre que vous souhaitez avec 
+order: (numéro);
+
+nth-child() permet de prendre un élément précis en fonction de sa position dans le code html
+exemple: .element:nth-child(2) signifie que je prend le second élément du code et je peux le réordonné avec la propriété css order:
+
+Changer la postion pour un seul item
+align-self: voir mdn
+
+9.Faire grossir ou maigrir les éléments
+flex-grow:
+Si un élément à flex-grow: 1; (il prendra tous l'espace restant)
+Si un élément à flex-grow: 1; un autre flex: 2; alors le second pourra grossir 2 fois plus que le premier.

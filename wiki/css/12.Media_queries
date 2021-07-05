@@ -1,0 +1,78 @@
+Ce sont des règles à appliquer pour changer le design d'un site en fonction des caractéristiques 
+de l'écran (smartphone, télévision, projecteur…), le nombre de couleurs, l'orientation de l'écran (portrait ou paysage), etc.
+
+En pratique, on s'en sert surtout pour modifier l'apparence du site en fonction des différentes résolutions d'écran.
+
+1.Appliquer une media query
+...........................
+
+2 facons :
+- En chargeant une feuille de style.css différente en fonction de la règle 
+- En écrivant la règle directement dans le fichier.css habituel 
+
+Chargement d'une feuille de style différente
+............................................
+
+<link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" />
+
+Chargement des règles directement dans la feuille de style
+..........................................................
+
+On crée une media query avec la directive @media suivie du type d'écran et d'une ou plusieurs conditions.
+Les règles peuvent être combinées à l'aide des mots suivants : only, and, not.
+
+@media screen and (max-width: 1280px)
+{
+    /* Rédigez vos propriétés CSS ici */
+}
+
+2.Les règles de base disponibles
+........................
+
+color: gestion de la couleur (en bits/pixel).
+
+height: hauteur de la zone d'affichage (fenêtre).
+
+width: largeur de la zone d'affichage (fenêtre).
+
+device-height: hauteur du périphérique.
+
+device-width: largeur du périphérique.
+
+orientation: orientation du périphérique (portrait ou paysage).
+
+media: type d'écran de sortie. Quelques-unes des valeurs possibles :
+
+- screen: écran « classique » ;
+
+- handheld: périphérique mobile ;
+
+- print: impression ;
+
+- tv: télévision ;
+
+- projection: projecteur ;
+
+- all: tous les types d'écran.
+
+Media queries et navigateurs mobiles
+....................................
+
+Les écrans des smartphones sont beaucoup moins larges que nos écrans habituels (seulement quelques centaines de pixels de large). 
+Pour s'adapter, les navigateurs mobiles affichent le site en « dézoomant », ce qui permet d'avoir un aperçu de l'ensemble de la page.
+La zone d'affichage simulée est appelée le viewport : c'est la largeur de la fenêtre du navigateur sur le mobile.
+
+Pour cibler les smartphones, plutôt que d'utiliser max-width, il peut être intéressant de recourir à max-device-width: c'est la largeur
+du périphérique. Les périphériques mobiles ne dépassant pas 480 px de large, on pourra viser uniquement les navigateurs mobiles avec 
+cette media query :
+
+@media all and (max-device-width: 480px)
+{
+    /* Vos règles CSS pour les mobiles ici */
+}
+
+Vous pouvez modifier la largeur viewport du navigateur mobile avec une balise meta à insérer dans l'en-tête (<head>) du document :
+<meta name="viewport" content="width=320" />
+
+Pour obtenir un rendu facile à lire, sans zoom, vous pouvez demander à ce que le viewport soit le même que la largeur de l'écran :
+<meta name="viewport" content="width=device-width" />

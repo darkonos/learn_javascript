@@ -1,0 +1,40 @@
+Voir mdn ou devdocs.io
+......................
+
+1.BORDURES STANDARD
+
+border: largeur couleur type;
+border: 3px blue dashed;
+
+Pour les bordures différentes de chaque coté
+border-top: bordure du haut ;
+border-bottom: bordure du bas ;
+border-left: bordure de gauche ;
+border-right: bordure de droite
+
+2.BORDURES ARRONDIES
+border-radius: taille;
+border-radius: 10px;
+
+Préciser la forme de l'arrondi pour chaque coin.
+border-radius: 10px 5px 10px 5px;
+
+Affiner l'arrondi de nos angles en créant des courbes elliptiques 
+ border-radius: 20px / 10px;
+
+ 3.LES OMBRES 
+
+A.Les ombres des boîtes ;
+La propriété box-shadows'applique à tout le bloc et prend quatre valeurs dans l'ordre suivant :
+
+le décalage horizontal de l'ombre ;
+le décalage vertical de l'ombre ;
+l'adoucissement du dégradé ;
+la couleur de l'ombre.
+
+box-shadow: 6px 6px 0px black *inset;  *inset (Si on veut que l'ombre soit placé à l'intérieur du bloc)
+
+B.Les ombres du texte.
+Ajouter une ombre directement sur les lettres du texte
+text-shadow: 2px 2px 4px black;
+

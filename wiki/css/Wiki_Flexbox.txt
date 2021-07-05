@@ -1,0 +1,76 @@
+
+display: flex /* Mode Flexbox */
+
+flex-basis : attribue une taille par défaut des boites du conteneur avant de distribuer l'espace restant.
+
+LA DIRECTION
+............
+flex-direction : permet de positionner horizontalement ou verticalement la container
+row : organisés sur une ligne (par défaut)
+column : organisés sur une colonne
+row-reverse : organisés sur une ligne, mais en ordre inversé
+column-reverse : organisés sur une colonne, mais en ordre inversé
+
+LE RETOUR A LA LIGNE 
+....................
+flex-wrap : demander à ce que les blocs aillent à la ligne lorsqu'ils n'ont plus la place
+nowrap : pas de retour à la ligne (par défaut), les éléments se resserent tant qu'ils peuvent
+wrap : les éléments vont à la ligne lorsqu'il n'y a plus la place
+wrap-reverse : les éléments vont à la ligne lorsqu'il n'y a plus la place en sens inverse
+
+ALIGNEMENT 
+..........
+Si les éléments sont organisés horizontalement, l'axe secondaire est l'axe vertical et inversement.
+
+Aligner sur l'axe principal(horizontale) ou secondaire(vertical)
+...........................
+justify-content : 
+flex-start : alignés au début (par défaut)
+flex-end : alignés à la fin
+center : alignés au centre
+space-between : les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux)
+space-around : idem, les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités.
+
+Aligner sur l'axe secondaire
+............................
+align-items :
+stretch : les éléments sont étirés sur tout l'axe (valeur par défaut)
+flex-start : alignés au début
+flex-end : alignés à la fin
+center : alignés au centre
+baseline : alignés sur la ligne de base (semblable à flex-start)
+flex-flow: permet de faire des raccourcis pour flex-direction et flex-wrap : ex: flex-flow: row wrap;
+
+Aligner un seul élément
+.......................
+align-self: permet de faire une exception pour un seul des éléments sur l'axe secondaire
+ex : align-self: flex-end; /* Seul ce bloc sera aligné à la fin */
+
+Répartir plusieurs lignes
+.........................
+avant tout, autoriser les éléments à aller à la ligne avec flex-wrap.
+align-content: 
+flex-start : les éléments sont placés au début
+flex-end : les éléments sont placés à la fin
+center : les éléments sont placés au centre
+space-between : les éléments sont séparés avec de l'espace entre eux
+space-around : idem, mais il y a aussi de l'espace au début et à la fin
+stretch (par défaut) : les éléments s'étirent pour occuper tout l'espace
+
+Modifier l'ordre des éléments
+.............................
+Indiquez simplement un nombre, et les éléments seront triés
+order:
+ex : order: 1; 
+L'empillement des boites affecté par order commence après que soit fini l'empillement des boites qui n'ont pas ét affecté par order. 
+
+
+Faire grossir ou maigrir les éléments
+.....................................
+flex: Permet à un élément de grossir pour occuper tout l'espace restant.
+indique dans quelle mesure il peut grossir par rapport aux autres.
+flex-grow  (capacité à grossir)
+flex-shrink (capacité à maigrir)
+flex-basis  (taille par défaut)
+
+ex: flex: 2 /*Grossit 2 fois plus que le second élément.

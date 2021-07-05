@@ -1,0 +1,54 @@
+GIT-wiki
+========
+Mise à jour le 30/11/2019
+
+Description : outil de versionning (contrôle de versions) pour un projet dev ou autres
+http://git-scm.com / https://gitforwindows.org/
+Permet de :
+- Conserver un historique
+- Revenir en arrière en cas de problème
+- Travailler à plusieurs sans pour autant entrer en conflit. 
+- Suivre les modifications de chaque fichier
+
+GIT : Outil qui permet de créer un dépôt local et de gérer les versions et la sauvegarde de nos fichiers
+GitHub : Un service en ligne qui va héberger notre dépôt
+
+
+0.Installation sous Linux 
+$ sudo apt-get install git
+
+1. CREER UN USER (windows, Linux, Mac):
+..................
+  # git config --global user.name "tux"
+  # git config --global user.mail "fb9@protonmail.com"
+  # git config -l
+
+Activer les couleurs
+....................
+$ git config --global color.diff auto
+$ git config --global color.status auto
+$ git config --global color.branch auto
+
+Editeur et Merge par défaut
+...........................
+$ git config --global core.editor votreEditeur
+$ git config --global merge.tool vimdiff
+
+.............................................................................
+
+2.BASIC COMMAND :
+.................
+- Connaitre la version utilisée :
+ $ git --version
+
+- Initialiser le dépot
+$ git init 
+
+Il faut initialiser le master en ajoutant et en committant un fichier.
+
+-Savoir ce qui se passe sur le dépot
+$ git status 
+
+-working directory : désigne l'arborescence de vos fichiers, c'est-à-dire tous vos fichiers et répertoires qui sont indépendants de Git
+-stage ou index : désigne tous les fichiers modifiés que vous souhaitez voir apparaître dans votre prochain commit.
+-dépôt local : c'est l'historique de l'ensemble de vos actions (commits, configurations...). 

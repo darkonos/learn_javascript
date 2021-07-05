@@ -1,0 +1,24 @@
+Voir mdn ou devdocs.io
+......................
+
+DIV : Division
+
+Le principal intérêt de ces balises est que l'on peut leur appliquer une class(ou un id) pour le CSS quand aucune autre balise ne convient.
+
+Permet de diviser du contenu, de mieux séparer le code. On l'utilise beaucoup en CSS
+il permet d'entourer des blocs et mieux organiser le code.
+exemple : regrouper un ensemble de paragraphe ou autre (qui devient un bloc).
+
+Attributs : Universel (class, id)
+
+Nouveau sous HTML5 :
+
+-article : fonctionne comme une div, mais permet de représenter un article.
+Cela donne un sens d'un point de vue sémantique.
+
+-nav : Permet de spécifier que nous sommes sur un élément de navigation (un menu..)
+-header : Représente un groupe de contenu qui aide à la navigation.
+-footer : pied de page 
+-section: représente une section générique d'un document.
+
+*Voir aussi le cours Openclassroom.

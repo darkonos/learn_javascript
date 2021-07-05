@@ -1,0 +1,30 @@
+
+l’arbre Git et sa structure
+...........................
+
+-le "tree" ou l'arbre Git qui est une forme de répertoire. Il va référencer une liste de trees et de blobs 
+(sous-répertoires et fichiers).
+-le "commit" qui va pointer vers un arbre spécifique et le marquer, afin de représenter son état à un instant
+ donné 
+-Le "blob" qui représente en général un fichier (Binary Large Object)
+
+
+Comment fonctionne la fusion sous Git ?
+.......................................
+
+La fonction Merge permet de réaliser une fusion d'une branche dans une autre.
+git merge  va combiner plusieurs séquences de commits en un historique unifié et créer un nouveau commit de merge
+
+
+Les options Git pull/Git push et git fetch
+..........................................
+$ git fetch
+Git fetch permet de garder son répertoire de travail à jour et de contrôler le moment où l'on souhaite fusionner
+les données.
+
+$ git pull 
+permet de télécharger les modifications qui ont eu lieu sur le dépôt distant, dans le but de les rapatrier 
+sur le dépôt local.
+
+$ git push 
+permet d'envoyer des modifications que l'on a réalisées en local sur le dépôt à distance.

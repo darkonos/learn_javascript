@@ -1,0 +1,38 @@
+Voir mdn ou devdocs.io
+......................
+
+Le format le plus utilisé est l'hexadécimal.
+on utilise aussi le RGB (Rouge, vert, Bleu) et RGBa
+
+En CSS, si vous appliquez un style à une balise, toutes les balises qui se trouvent
+à l'intérieur prendront le même style (l'heritage)
+
+
+- COULEUR DU TEXTE
+color: (exadécimale ou RGBa);
+
+- COULEUR DE FOND d'une page web (il faut travailler sur la balise body)
+background-color:
+
+- IMAGE DE FOND
+background-image: url("img/neige.png");
+
+-Pour fixer le fond
+background-attachement: fixed, scroll;
+
+-Répétition du fond
+backgroung-repeat: no-repeat; (Le fond ne sera pas répété)
+
+- indiquer où doit se trouver l'image de fond (Cette propriété n'est intéressante que si elle 
+est combinée avec background-repeat: no-repeat;)
+background-position: 30px 50px;
+
+- Combiner les propriétés
+Utile si vous utilisez beaucoup de propriétés en rapport avec le fond
+background: url("soleil.png") fixed no-repeat top right;
+
+- Plusieurs images de fond
+ background: url("soleil.png") fixed no-repeat top right, url("neige.png") fixed;
+
+- LA TRANSPARENCE (1=Opaque, 0=transparent)
+opacity: 0.3; (on utilise aussi la notation RGBa) 

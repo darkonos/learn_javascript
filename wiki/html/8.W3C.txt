@@ -1,0 +1,23 @@
+Voir mdn ou devdocs.io
+
+Organisme qui est chargé de gérer les différents langage liés au web.
+
+Mozilla MDN ne fait qu'interpréter sous forme de résumé le standard W3C car trop lourd à comprendre car trop de détail.
+Ses spécifications servent au éditeur de navigateur pour comprendre comment doit fonctionner tel élément.
+Certains navigateur veulent anticiper en intégrant des fonctionnalités non approuvées par le W3C ce sui peut créer des erreurs.
+Il faut toujours utilisé des éléments certifiés par le W3C.
+
+Le validator : http://validator.w3.org/
+
+C'est un outil qui permet de vérifier et de valider la structure de votre page web.
+
+- Il proposera des recommendations 
+- Il verifira si vous avez fait des erreurs 
+
+Dans les options supplémentaires, vous avez la possiblité de :
+
+- changer la version du HTML dans "Use Doctype"
+- réorganiser le code HTML avec "clean up Markup with HTML-Tidy"
+- avoir plus de détails avec "Verbose Output"
+
+Si un navigateur respecte le W3C, votre site s'affichera correctement. 

@@ -1,0 +1,46 @@
+Voir mdn ou devdocs.io
+......................
+
+Viewport : désigne la partie d'une page web qui est visible dans la fenêtre du navigateur d'un ordinateur ou d'un smartphone.
+
+Un élément peut être en position: 
+- static : les éléments se positionne les uns par rapport aux autres.
+- relative : on peut ajouter un décalage 
+- absolute : permet de spécifier la position de l'élément par rapport au haut, bas, gauche, droite de la fenêtre.
+- sticky:  se comporte comme static jusqu'au moment ou il sort du cadre du navigateur
+- fixed : se positionne au dessus des autres éléments et reste figé par rapport à la fenêtre.
+
+Les propriétés utilisées sont : top, bottom, left, right en (px, em, %...).
+
+Par défaut tous les éléments d'une page sont en static. C'est à dire le positionnement de 
+l'élément dépend du contenu. Automatiquement les éléments sont placés à la suite des autres sans 
+psitionnement particulier.
+
+- POSITION ABSOLUTE ET RELATIVE
+Les positions absolute et relative vont toujours ensemble. Elle permet de faire sortir
+un élément du flux et de le positionner comme bon nous semble par rapport à un élément
+parent qui lui se trouve en position relative.
+
+Quand on met un élément enfant en position absolute, on doit mettre le premier élément parent en position
+relative.  Ensuite on règle les propriétés.
+
+Pour centrer un élément en position absolute
+tranform: translate(-50%, -50%);
+
+Comment le navigateur détermine quel élément passe au dessus de l'autre ?
+Il utilise l'ordre dans le html. L'élément qui arrive après, sera placé au dessus
+
+CHANGER LA POSITION D'UN ELEMENT par rapport à l'ordre HTML
+Régler la position d'un élément sur l'axe Z (la profondeur) ou étage.
+zindex: 1
+exemple : footer zindex:1 et nav zindex:2 , la nav sera au dessus 
+L'élément qui aura le zindex le plus élevé sera placé au dessus.
+
+
+
+
+
+
+
+
+

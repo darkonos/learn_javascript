@@ -1,0 +1,6 @@
+Il y a plusieurs façons de mettre en page un site.
+
+1. Au début, les webmasters utilisaient des "tableaux HTML" (n'est plus utilisé)
+2. Apparition du css avec la propriété "float" 
+3. Le type inline-block 
+4. Flexbox (nouveau et recommandé)

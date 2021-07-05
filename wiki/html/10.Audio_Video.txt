@@ -1,0 +1,83 @@
+***Vous ne pouvez pas protéger votre média contre la copie ou le téléchargement.***
+
+1.Les formats audio
+...................
+
+- MP3 : le plus connnu
+- AAC : Utilisé par Apple
+- OGG : Open Source 
+- WAV : Format non compressé
+
+2. Les formats vidéo
+....................
+
+On a besoin de trois éléments :
+
+- Un format conteneur : sert à contenir le codec audio et vidéo.(AVI, MP4, MKV...)
+- Un codec audio : MP3, AAC, OGG, WAV..
+- Un codec vidéo : format qui va compresser les images. H.264 (le plus utilisé mais pas 100% gratuit),
+  ogg theora (gratuit et libre de droits), WebM (gratuit et libre de droits de Google).
+
+  Il faut proposer chaque vidéo dans plusieurs formats pour qu'elle soit lisible sur un maximum de navigateurs. (caniuse.com).
+
+  Pour convertir une vidéo dans ces différents formats : http://www.mirovideoconverter.com/
+
+  3.Insertion d'un élément audio
+  ..............................
+
+  <audio src="musique.mp3" controls></audio> 
+
+ 3.Les attributs :
+  ...............
+- controls: pour ajouter les boutons « Lecture », « Pause » et la barre de défilement. 
+
+- width: pour modifier la largeur de l'outil de lecture audio.
+
+- loop: la musique sera jouée en boucle.
+
+- autoplay: la musique sera jouée dès le chargement de la page. Évitez d'en abuser, c'est en général irritant d'arriver sur un site qui joue de la musique tout seul !
+
+- preload: indique si la musique peut être préchargée dès le chargement de la page ou non. Cet attribut peut prendre les valeurs :
+auto(par défaut) : le navigateur décide s'il doit précharger toute la musique, uniquement les métadonnées ou rien du tout.
+Les navigateurs mobiles, par exemple, ne préchargent jamais la musique pour économiser la bande passante.
+
+- metadata: charge uniquement les métadonnées (durée, etc.).
+
+- none: pas de préchargement. Utile si vous ne voulez pas gaspiller de bande passante sur votre site.
+
+4.Proposer plusieurs versions du fichier audio pour le navigateur 
+.................................................................
+
+<audio controls>
+    <source src="hype_home.mp3">
+    <source src="hype_home.ogg">
+</audio>
+
+
+5. Insertion d'une vidéo
+........................
+
+<video src="sintel.webm" controls poster="sintel.jpg" width="600">
+Il est temps de mettre à jour votre navigateur !
+</video>
+
+attributs
+.........
+
+- poster
+- controls
+- width
+- height
+- loop
+- autoplay
+- preload
+- voir mdn
+
+6.Proposer plusieurs versions du fichier audio pour le navigateur 
+.................................................................
+
+<video controls poster="sintel.jpg" width="600">
+    <source src="sintel.mp4">
+    <source src="sintel.webm">
+    <source src="sintel.ogv">
+</video>

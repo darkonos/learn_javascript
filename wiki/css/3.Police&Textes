@@ -1,0 +1,66 @@
+Voir mdn ou devdocs.io
+
+PROPRIETE:
+
+COULEUR:
+........
+
+L'héxadécimale est souvent utilisé en CSS. Cela permet d'être plus précis.
+
+Pour que la couleur soit hérité du parent
+color: inherit;
+
+TAILLE (haut et bas d'une lettre) en px ou en em
+................................................
+
+font-size: 16px; font-size: 1em; (taille normale)
+
+POLICE 
+......
+Mettre toujours une liste de police à utilisé par défaut.
+font-family: "vos police", serif, sans-serif; (toujours ses 2 polices à mettre par défaut)
+texte long : on utilise serif
+titre et texte court : sans-serif
+
+- Police personnalisé (à récupérer sur fontsuirrel.com)
+@font-face
+
+Les différents formats: 
+.ttf: TrueType Font. Fonctionne sur IE9 et tous les autres navigateurs.
+.eot: Embedded OpenType. Fonctionne sur Internet Explorer uniquement, toutes versions. Ce format est propriétaire, produit par Microsoft.
+.otf: OpenType Font. Ne fonctionne pas sur Internet Explorer.
+.svg: SVG Font. Le seul format reconnu sur les iPhones et iPads pour le moment.
+.woff: Web Open Font Format. Nouveau format conçu pour le Web, qui fonctionne sur IE9 et tous les autres navigateurs.
+
+Déclarer la nouvelle police
+@font-face {
+    font-family: 'MaSuperPolice'; 
+    src: url('MaSuperPolice.eot');
+}
+
+Ensuite, nous utilisons ce nom de police avec la propriété font-family.
+
+-La hauteur de ligne
+line-height: 1.4
+Les bonne règles en typographie se situe entre 1.4 et 1.6, cela permet au texte de respirer.
+
+- Distance entre les lettres
+letter-spacing: 0.4px;
+
+- Alignement d'un texte (center, justify, left...)
+L'alignement ne fonctionne que sur des balises de type block(<p>, <h1>, <h2>, <div>...)
+text-align: left, right, center, justify;
+
+- Soulignement et autres décorations)
+text-decoration: underline (souligné), line-through (barré), overline (ligne au dessus), none (normal);
+
+- Mettre en gras
+font-weight: normal, bold;
+
+- Mettre en italique
+font-Style: normal, italic, oblique;
+
+- Faire flotter une image
+float: left, right; 
+- Stopper un flottant
+On applique clear: both; (Le texte se poursuit en dessous de l'image flottante)

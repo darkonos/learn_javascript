@@ -1,0 +1,10 @@
+Voir mdn ou devdocs.io
+......................
+
+Permet de créer des éléments flotant les uns par rapport aux autres.
+
+float: (right, left..);
+
+Paragraphe qui continue sous l'image flottante
+clear: both;
+

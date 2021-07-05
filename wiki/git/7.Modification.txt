@@ -1,0 +1,16 @@
+
+7.Retrouvez qui a fait une modification
+.......................................
+
+La commande "blame" liste toutes les modifications qui ont été faites sur le fichier ligne par ligne.
+À chaque modification est associé le début du sha du commit correspondant.
+
+$ git blame nomdufichier
+
+Pour retrouver pourquoi cette modification a été faite, vous avez deux possibilités : 
+
+1. git log et rechercher le commit par son sha
+2. git show leNumeroDuSHA (Affiche les détails du commit)
+
+
+Toujours écrire des commit clairs et précis. Vous pouvez contacter l'auteur du commit pour en savoir plus. 

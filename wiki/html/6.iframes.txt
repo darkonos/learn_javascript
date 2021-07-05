@@ -1,0 +1,13 @@
+Voir mdn ou devdocs.io
+
+Définition:
+Les iframes permet de créer un petit cadre dans une page web et de charger une autre page web.
+Très utilisé pour insérer du contenu multimédia.
+1.exemple
+<iframe src="" width="" heigth="">
+A partir de youtube
+dans partager, seclectionner "intégrer"
+
+Pour infos :
+Il n'est pas possible de charger un site dans une iframe pour une question de sécurité. 
+

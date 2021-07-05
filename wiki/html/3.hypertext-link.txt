@@ -1,0 +1,26 @@
+Voir mdn ou devdocs.io
+
+Les liens hypertext :
+
+-a : ancre pour lier les pages.
+-Pour revenir en arrière à la racine : ../ sinon on met le lien relatif avec l'architecture 
+des dossiers : ../index.html
+
+Les Ancres:
+ lien interne à la page:
+<a href="#mot-clé" title="mot-clé">cuisine</a>
+ensuite on ajoute un id sur l'élément voulu: 
+<h2 id="mot-clé">cuisine</h2>
+
+ lien interne à une autre page :
+créer un id sur l'élément désiré
+id="mot-clé"
+ensuite on pointe le lien
+<a href="lien1.html#lien2">élément</a>
+
+target="_blank" : pour ouvrir dans une nouvelle page
+
+IMPORTANT
+Un id doit être unique, dans une même page plusieurs éléments ne doivent pas posséder le même id.
+2 éléments peuvent avoir le même id dans des pages différentes.
+

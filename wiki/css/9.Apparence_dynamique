@@ -1,0 +1,17 @@
+Voir mdn ou devdocs.io
+......................
+
+1.AU SURVOL
+a:hover
+
+2.AU CLIC LORS DE LA SELECTION
+a:active
+
+3.LORSQUE L'ELEMENT EST SELECTIONNE
+a:focus
+
+3.LORSQUE LE LIEN A DEJA ETE CONSULTE
+a:visited
+
+Même si on l'utilise souvent sur les liens, vous pouvez modifier 
+l'apparence de n'importe quel élément. 

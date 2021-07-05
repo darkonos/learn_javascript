@@ -1,0 +1,5 @@
+
+6. RESOUDRE UN CONFLIT
+......................
+
+Exemple : lorsque plusieurs personnes travaillent en même temps sur un même fichier.
