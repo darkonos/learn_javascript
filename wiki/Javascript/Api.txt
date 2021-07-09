@@ -1,0 +1,19 @@
+//API 
+......
+
+API (Application Programming Interface) : interface (ensemble de code), grâce à laquelle un logiciel fournit des services à des clients.
+
+Les API Javascript sont classés en deux catégories :
+
+Les API intégrées aux navigateurs web qui sont rassemblées dans le BOM (Browser Object Model) fournit des propriétés et des méthodes permettant de réaliser des opérations complexes
+- API DOM pour du développement web pour manipuler le HTML et le CSS d’une page
+- API de Geolocation qui va nous permettre de définir des données de géolocalisation
+- API Canvas qui permet de dessiner et de manipuler des graphiques dans une page
+
+Les API externes proposées par certains logiciels ou sites
+- API Google Map qui permettent d’intégrer et de manipuler des cartes dans les pages web 
+- API Twitter qui permet d’afficher une liste de tweets sur un site
+- API YouTube qui permet d’intégrer des vidéos sur un site
+
+Pour accéder à l'API (Application Programming Interface) du DOM, il suffit d'utiliser l'objet 'document' associé à des 'méthodes'
+pour nous permettre de manipuler le HTML et le CSS d’une page web.

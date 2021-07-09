@@ -30,9 +30,32 @@ Pour connaitre le type d'une variable, on utilise la fonction typeof(la variable
 
  3.Booleans
 ..............
+Ils peuvent avoir deux valeurs différentes :
+   - False : si une variable contient : 0, chaîne vide, null, undefined, NaN
+   - true : tout le reste est considéré comme vrai 
 
-- False : si une variable contient : 0, chaîne vide, null, undefined, NaN
-- true : tout le reste est considéré comme vrai 
+On les utilise souvent dans les conditions, utile pour valider les valeurs entrées dans les formulaires.
+
+/* exemple utlisation des boolées */
+
+let username = prompt('your username : ');
+
+test = true;
+
+if (username.length > 12) {
+
+    test = false;
+}
+
+if (test) {
+
+    console.log('username is good !');
+}
+else {
+    console.log('username is hupper at 12 char ! ');
+}
+
+/*
 
 4.CONCATENATION (A savoir) 
    ........................

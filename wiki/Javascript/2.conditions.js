@@ -41,7 +41,7 @@ AND (&&), OR(||), NO(!)
 //L'opérateur ternaire
 ......................
 
-Permet d'utiliser une syntaxe trsè codensée et accélérer la vitesse d’exécution du code.
+Permet d'utiliser une syntaxe très codensée et accélérer la vitesse d’exécution du code.
 
  test ? code à exécuter si true : code à exécuter si false
 

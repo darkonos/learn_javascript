@@ -23,8 +23,9 @@ Une méthode est le nom donné à une fonction définie au sein d’un objet.
 //Fonctions anonymes
   ..................
 
-Ce sont des fonctions qui ne vont pas posséder de nom. 
-Une fonction anonyme s'éxécute directement après que l'évenement (ex : onclik) soit déclenché.
+Ce sont des fonctions qui ne posséde pas de nom. 
+Une fonction anonyme s'éxécute directement après qu'un évènement soit déclenché. 
+Une fonction normale, doit être créé et ensuite appelé pour être éxecuté.
 
 //Fonctions récursives
   ....................

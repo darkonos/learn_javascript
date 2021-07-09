@@ -37,10 +37,10 @@ Contient trois « phases » à l’intérieur du couple de parenthèses : une ph
  Utilisation : Quand on connait le nombre de tour que doit faire la boucle.
 
 
-//L'instruction continue
+/*L'instruction continue
   ......................
 
-  Permet de sauter une itération de boucle et passer directement à la suivante.
+  Permet de sauter une itération de boucle et passer directement à la suivante.*/
   
 let nombre = [12, 3, 4, 8, 9, 14];
 
@@ -53,7 +53,7 @@ for(i=0; i<nombre.length; i++) {
     console.log('les nombres pairs sont : ' +nombre[i]);
 }
 
-//L'instruction break
+/*L'instruction break
 .....................
 
 Permet de stopper l’exécution d’une boucle et sortir à un moment donné.
