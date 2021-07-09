@@ -1,6 +1,6 @@
 
 /*.........DOM............
-
+Le DOM est une API qui permet de faire le lien entre le Javascript et le document html
  Le DOM représente la structure du document html ou XML sous une forme d'arbre et qui permet aux langages JavaScript d’y accéder effectuer des actions :
  - Ajouter
  - modifier
