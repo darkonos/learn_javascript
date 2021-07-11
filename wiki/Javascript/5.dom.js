@@ -7,7 +7,9 @@ Le DOM est une API qui permet de faire le lien entre le Javascript et le documen
  - supprimer des éléments html et css
  - assigner des évènements
 
-On utilise pour cela des propriétés et des méthodes.
+ 
+Pour accéder à l'API (Application Programming Interface) du DOM, il suffit d'utiliser l'objet 'document' associé à des 'méthodes'
+et propriétés pour nous permettre de manipuler le HTML et le CSS d’une page web.
 
 - Children : élément html qui descend d'un élément parent
 - Noeuds   : chaque éléments de la page html (texte, commmentaire, html)
@@ -128,6 +130,8 @@ Cela permet de bien séparer le rôle des différents langages et d'avoir un cod
 const article = document.getElementsByTagName('article')[0];
 article.id = 'test' //On modifie l'attribut de article
 console.log(article.id);
+
+/*..Propriétés ajouter modifier du contenu...*/
 
 // 2.9 La propriété textContent
 //Permet d'ajouter du contenu textuel (non html) à un élément html
