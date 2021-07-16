@@ -1,4 +1,4 @@
-/* 10. Les évenements
+/* 10. Les évenements (voir MDN)
 .....................
 
 Permet d'associer des évènements(scripts) aux éléments html qu'on a sélectionné avec le DOM dans le but de déclencher une fonction
@@ -29,5 +29,44 @@ Evenements au clavier :
 - onFocus     : détecte si un champ est activé pour l'écriture
 
 
+/* 1. Associer un évènement à un bouton */
+const bouton = document.getElementsByTagName('button')[0];
 
+bouton.addEventListener('click', () => {  //Appel de la méthode addventListener qui prend 2 paramètres, l'événement click et une fonction Arrow
+    if (document.body.style.backgroundColor === 'purple') {
+        document.body.style.backgroundColor = 'grey';
+    } 
+    else {
+        document.body.style.backgroundColor = 'purple';
+    }
+    
+})
 
+/* 1.2 Annuler l'action par défaut d'un élément html */
+//exemple avec un lien :
+
+const lien = document.getElementById('lien');
+
+lien.addEventListener('click', () => console.log('Salut'));
+
+lien.addEventListener('click', e => {  //On injecte l'objet event(nom à choisir, ici 'e') qui contient des infos sur l'évènement qui vient de se produire
+    console.log('Salut');
+    e.preventDefault() //La méthode preventDefault() permet d'annuler l'action par défaut d'un élément html(ici lien)
+});
+
+/* 1.3 Les événements standards (voir MDN)
+
+- KeyboardEvent.key : Permet de récupérer la valeur de la touche qui est pressée. */
+
+const input = document.getElementById('input');
+
+input.addEventListener('keydown', e => {  //Utilisation de l'évènement keydown appartenant à KeyboardEvent.key
+    if(e.key === 'Enter') { //Si l'évenment est = touche entrée préssée
+        console.log('Touche enter pressée !'); 
+    }
+   
+});
+
+/* 1.4 La propagation
+Lorsqu'un évenement se produit sur un élément html, cet évenement va remonter vers les différents éléments parents du document et 
+jusqu'au body.
