@@ -15,7 +15,7 @@ const load = document.getElementById('load');
 // 0. On récupère le tableau des tâches deja existantes
 const tasks = ['Salle de sport', 'Tourner des tutos'];
 
-// 3. Fonction qui ajoute les tâches au DOM avec un boutton de suppression auquel on attache un évènement
+// 3. Fonction qui ajoute les tâches au DOM avec un boutton(REMOVE) de suppression auquel on attache un évènement
 function taskToDOM(task) {
  
      //On vérifie si on a une chaine de caractère non-vide dans task
@@ -28,7 +28,7 @@ function taskToDOM(task) {
          li.textContent = task;  //Ajout du texte à li
          remove.textContent = 'REMOVE'; //On nomme le button
 
-         //Ajout d'un évènement au bouton remove
+         //Ajout d'un évènement au bouton (remove)
          remove.addEventListener('click', () => {
             list.removeChild(remove.parentNode); //On supprime l'élément parent de remove (li)
          });

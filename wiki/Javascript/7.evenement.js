@@ -49,7 +49,7 @@ const lien = document.getElementById('lien');
 
 lien.addEventListener('click', () => console.log('Salut'));
 
-lien.addEventListener('click', e => {  //On injecte l'objet event(nom à choisir, ici 'e') qui contient des infos sur l'évènement qui vient de se produire
+lien.addEventListener('click', e => {  //On injecte l'objet event(nom à choisir, ici 'e') qui permet de récupérer des infos sur l'évènement 'click' qui vient de se produire
     console.log('Salut');
     e.preventDefault() //La méthode preventDefault() permet d'annuler l'action par défaut d'un élément html(ici lien)
 });
