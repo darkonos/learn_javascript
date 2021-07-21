@@ -3,6 +3,7 @@
 Création : 1995 par Brendan Eich qui participera également à la création de la fondation Mozilla.
 Standartisation : 1997 sous le nom ECMAScript
 
+
 - Langage de programmation sous forme de scripts, c’est-à-dire sans phase de compilation du code source vers un langage de plus bas niveau.
   L’exécution du script sefait directement par le navigateur à partir du code écrit par le développeur.
 - Langage interprété (Tous les navigateurs connus possèdent leur interpréteur JavaScript)

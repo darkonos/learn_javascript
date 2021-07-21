@@ -81,7 +81,7 @@ setInterval( (name, lastname) => { //Plusieurs paramètres
 setInterval(  name => console.log('hello'), 2000);
 
 
-//Fonctions récursives
+/* Fonctions récursives
   ....................
 
   C'est une fonction qui va s’appeler elle-même au sein de son code.

@@ -64,3 +64,30 @@ Permet de stopper l’exécution d’une boucle et sortir à un moment donné.
 Elles sont utilisées pour parcourir des objets.
 
 
+/* 1. Méthodes de boucle pour remplacer les boucles classique et optimiser le code */
+
+const tasks = ['tourner des tutos ', 'Faire du sport']
+
+for(let i=0; i < tasks.length; i++) {
+    console.log(tasks[i])
+}
+
+//Méthode foreach
+//Permet d'itérer uniquement des éléments d'un tableau
+tasks.forEach(tasks => console.log(tasks)) //On renseigne le nom du tableau et les actions à effectuer
+
+//Méthode for of
+//Permet de faire un listing de tous les éléments itérables (un tableau ou un objet qui liste les éléments)
+
+for(let task of tasks) { //On cré une variable (ici task) qui va récupérer un élément à chaque itération, et on renseigne l'objet itérable(tasks)
+    console.log(task)
+}
+
+/*On peux utiliser 'for of' sur des objets qui liste des éléments et du coup itérer chacune des valeurs .
+exemple sur la méthode getElementsByTagName() */
+
+const boutons = document.getElementsByTagName('button')
+
+for(let bouton of boutons) {
+  bouton.addEventListener('click', e => console.log(`${e.target.textContent} cliqué ! `)) //On récupère la cible qui a été cliqué, On ajout un évènement les uns à la suite des autres 
+}
