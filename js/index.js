@@ -1,4 +1,4 @@
- 
+ 'use strict'
 
 // Notre application TODO LIST
 
@@ -21,14 +21,15 @@ function taskToDOM(task) {
      //On vérifie si on a une chaine de caractère non-vide dans task
      if(typeof task === 'string' && task)
      {
-         //Création des éléments html pour les ajouter dans notre ul (id= list)
+         // 3.1 Création des éléments html (li) pour les ajouter dans notre ul (id= list)
          const li = document.createElement('li'); //Création d'un élément de liste
          const remove = document.createElement('button'); //Création d'un button pour supprimer la tâche créé
+        
  
          li.textContent = task;  //Ajout du texte à li
          remove.textContent = 'REMOVE'; //On nomme le button
 
-         //Ajout d'un évènement au bouton (remove)
+         // 3.2 Ajout d'un évènement au bouton (remove)
          remove.addEventListener('click', () => {
             list.removeChild(remove.parentNode); //On supprime l'élément parent de remove (li)
          });
@@ -38,12 +39,15 @@ function taskToDOM(task) {
      }
 }
 
-// 2. On ajoute chaque tâches à la liste à puces
-for(let i = 0; i < tasks.length; i++) 
-{
-   taskToDOM(tasks[i]); //Envoi comme argument tasks[i] en paramètre à la fonction taskToDOM()
+// 2. On ajoute chaque tâches à la liste à puces (méthode traditionelle)
+// for(let i = 0; i < tasks.length; i++) 
+// {
+//    taskToDOM(tasks[i]); //Envoi comme argument tasks[i] en paramètre à la fonction taskToDOM()
 
-}
+// }
+
+// 2. On ajoute chaque tâches à la liste à puces  (méthode foreach) pour optimiser le code
+tasks.forEach(task => taskToDOM(task));
 
 // 4. Gestion des évènements pour ajouter une nouvelle tâche à l'aide du bouton ADD
 

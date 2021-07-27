@@ -9,7 +9,7 @@
 • La boucle for… of (« pour… parmi ») ;
 • La boucle for await… of (« pour -en attente-… parmi »)
 
-//Les opérateurs d’incrémentation et de décrémentation
+// 1. Les opérateurs d’incrémentation et de décrémentation
   ....................................................
 
   ++x Pré-incrémentation : incrémente la valeur contenue dans la variable x, puis retourne la valeur incrémentée
@@ -17,19 +17,19 @@
   --x Pré-décrémentation : décrémente la valeur contenue dans la variable x, puis retourne la valeur décrémentée
   x-- Post-décrémentation : retourne la valeur contenue dans x avant décrémentation, puis décrémente la valeur de x
 
-  //La boucle while
+  // 2. La boucle while
    .................
 
   Permet de répéter une série d’instructions tant qu’une condition donnée est vraie.
   
-  //La boucle do..while
+  // 3. La boucle do..while
     ...................
 
   La condition de sortie n’est évaluée qu’en fin de boucle, après le passage dans la boucle. Le code de la boucle sera donc
 exécuté au moins une fois.
 
- //La boucle for
-   .............
+ // 4. La boucle for
+   .................
 
 Contient trois « phases » à l’intérieur du couple de parenthèses : une phase d’initialisation, une phase de test (condition de sortie)
  et une phase d’itération (généralement une incrémentation). 

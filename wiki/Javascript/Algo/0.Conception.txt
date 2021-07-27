@@ -1,0 +1,11 @@
+
+1. Étude de la conception des algorithmes
+
+Un algorithme est constitué d’une série d’étapes pour résoudre un problème.
+
+Pour résoudre un problème quelconque, il faut le comprendre.
+
+Diviser pour mieux régner
+...........................
+En divisant un problème considérable en petits éléments bien plus faciles à appréhender, on peut aboutir à une solution 
+qui fonctionne pour l’ensemble du problème. procéder par étapes et résoudre les problèmes morceau par morceau.
