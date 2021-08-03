@@ -1,4 +1,4 @@
-/* 1.LES VARIABLES 
+/* 1. LES VARIABLES 
 .....................
 
 - var : ancienne version
@@ -18,8 +18,8 @@
 
 Pour connaitre le type d'une variable, on utilise la fonction typeof(la variable);
 
-2.Strings
-.............
+/* 1.1 Strings
+
 
 - "Guillemets double" : 
 - 'Guillemets simple' : A utiliser quand il n'y a pas de paramètre variable ou expressions à l'intérieur
@@ -28,8 +28,8 @@ Pour connaitre le type d'une variable, on utilise la fonction typeof(la variable
 
  On peut manipuler les strings avec des propriétés (.length) et méthodes (toUpperCase)
 
- 3.Booleans
-..............
+ /* 1.2 Booleans
+
 Ils peuvent avoir deux valeurs différentes :
    - False : si une variable contient : 0, chaîne vide, null, undefined, NaN
    - true : tout le reste est considéré comme vrai 
@@ -55,17 +55,15 @@ else {
     console.log('username is hupper at 12 char ! ');
 }
 
-/*
-
-4.CONCATENATION (A savoir) 
-   ........................
+/* 1.3 CONCATENATION (A savoir) 
+   
 
 lorsqu’on utilise le signe +, le JavaScript va considérer tout ce qui se situe après une chaine de caractères comme des
 chaines de caractères. Ainsi, si on écrit 'un' + 2 + 4 , le JavaScript concaténera
 en 'un24' tandis que si on écrit 2 + 4 + 'un', la valeur finale sera '6un'. */
 
-/* typeof
-..........
+/* 1.4 typeof
+
 
 C'est un opérateur unaire(besoin d'une seul expression pour fonctionner) qui permet de récupérer le type d'une valeur qu'on lui passe en 
 paramètre.
@@ -74,8 +72,8 @@ Très utile pour s'assurer dans un script du type de la valeur afin d'éviter de
 Attention car typeof considére les Arrays comme des Objets ! il faudra utiliser  une autre méthode.
 
 
-5.Les littéraux de gabarits
-...........................
+/* 1.5 Les littéraux de gabarits (A préféré)
+
 
 Il existe en fait une troisième manière introduite récemment d’entourer des chaines de
 caractères en JavaScript qui va utiliser des accents graves ` 
@@ -86,7 +84,5 @@ interprétées, c’est-à-dire remplacées par leur valeur. exemple : */
 let x = 5;
 let y = 6;
 
-alert(`x contient ${x}
-       y contient ${y}
-       Leur somme vaut : ${x + y}`);
+alert(`x contient ${x} y contient ${y} Leur somme vaut : ${x + y}`);
                      

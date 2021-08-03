@@ -1,4 +1,4 @@
-/* 5.LES CONDITIONS (les structures de contrôle conditionnelles )
+/* LES CONDITIONS (les structures de contrôle conditionnelles )
    ............................................................
 
 Les conditions vont nous permettre d’exécuter un certain nombre d’instructions si et
@@ -16,7 +16,7 @@ ou pour l’afficher si celui-ci est caché.
 *dans une condition de plusieurs else if, c’est la première comparaison rencontrée validée qui va être retenue et les autres 
 tests en dessous vont être ignorés.
 
-//Les opérateurs de comparaison
+/* 1. Les opérateurs de comparaison
   .............................
 
 == Permet de tester l’égalité sur les valeurs (car le simple = sert à l'affectation de variable)
@@ -33,19 +33,19 @@ tests en dessous vont être ignorés.
 l’opérateur de comparaison fourni et renvoyer le booléen true si la comparaison est
 validée ou false si elle ne l’est pas.
 
-//Les opérateurs logique 
+/* 1.2 Les opérateurs logique 
   ......................
 
 AND (&&), OR(||), NO(!)
 
-//L'opérateur ternaire
+/* 1.3 L'opérateur ternaire
 ......................
 
 Permet d'utiliser une syntaxe très codensée et accélérer la vitesse d’exécution du code.
 
  test ? code à exécuter si true : code à exécuter si false
 
- //L'instruction switch
+ /* 1.4 L'instruction switch
  ......................
 
 l’instruction switch représente une alternative à l’utilisation d’un if…else if…else.

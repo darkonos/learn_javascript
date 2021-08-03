@@ -48,7 +48,7 @@ Objet de la classe promise qui produira une valeur dans le futur.
 
  /* 3.1 API fetch
  Permet de faire des requètes http(s). Grace à cette API qu'on pourra dire au serveur qu'on veut récupéré des données de façon asynchrone.
- Après avoir récupéré les données, on pourra les traiter et les afficher sur un document html.
+ Après avoir récupéré les données, on pourra les traiter et les afficher sur un document html. L'API fetch utilise les promesses.
 
 
  /* 3.2 API webStorage 

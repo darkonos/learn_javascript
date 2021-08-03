@@ -1,4 +1,4 @@
-/* 6.LES BOUCLES (Les structures répétitives)
+/* LES BOUCLES (Les structures répétitives)
    ........................................
 
    Nous disposons de six boucles différentes en JavaScript :
@@ -9,7 +9,7 @@
 • La boucle for… of (« pour… parmi ») ;
 • La boucle for await… of (« pour -en attente-… parmi »)
 
-// 1. Les opérateurs d’incrémentation et de décrémentation
+/* 1. Les opérateurs d’incrémentation et de décrémentation
   ....................................................
 
   ++x Pré-incrémentation : incrémente la valeur contenue dans la variable x, puis retourne la valeur incrémentée
@@ -17,18 +17,18 @@
   --x Pré-décrémentation : décrémente la valeur contenue dans la variable x, puis retourne la valeur décrémentée
   x-- Post-décrémentation : retourne la valeur contenue dans x avant décrémentation, puis décrémente la valeur de x
 
-  // 2. La boucle while
+  / 1.2 La boucle while
    .................
 
   Permet de répéter une série d’instructions tant qu’une condition donnée est vraie.
   
-  // 3. La boucle do..while
+  /* 1.3 La boucle do..while
     ...................
 
   La condition de sortie n’est évaluée qu’en fin de boucle, après le passage dans la boucle. Le code de la boucle sera donc
 exécuté au moins une fois.
 
- // 4. La boucle for
+ /* 1.4 La boucle for
    .................
 
 Contient trois « phases » à l’intérieur du couple de parenthèses : une phase d’initialisation, une phase de test (condition de sortie)
@@ -37,7 +37,7 @@ Contient trois « phases » à l’intérieur du couple de parenthèses : une ph
  Utilisation : Quand on connait le nombre de tour que doit faire la boucle.
 
 
-/*L'instruction continue
+/* 1.5 L'instruction continue
   ......................
 
   Permet de sauter une itération de boucle et passer directement à la suivante.*/
@@ -53,8 +53,8 @@ for(i=0; i<nombre.length; i++) {
     console.log('les nombres pairs sont : ' +nombre[i]);
 }
 
-/*L'instruction break
-.....................
+/* 1.6 L'instruction break
+..........................
 
 Permet de stopper l’exécution d’une boucle et sortir à un moment donné.
 
@@ -64,7 +64,7 @@ Permet de stopper l’exécution d’une boucle et sortir à un moment donné.
 Elles sont utilisées pour parcourir des objets.
 
 
-/* 1. Méthodes de boucle pour remplacer les boucles classique et optimiser le code */
+/* 2. Méthodes de boucle pour remplacer les boucles classique et optimiser le code */
 
 const tasks = ['tourner des tutos ', 'Faire du sport']
 
@@ -72,18 +72,20 @@ for(let i=0; i < tasks.length; i++) {
     console.log(tasks[i])
 }
 
-//Méthode foreach
-//Permet d'itérer uniquement des éléments d'un tableau
+/* 2.1 Méthode foreach
+
+Permet d'itérer uniquement des éléments d'un tableau */
 tasks.forEach(tasks => console.log(tasks)) //On renseigne le nom du tableau et les actions à effectuer
 
-//Méthode for of
-//Permet de faire un listing de tous les éléments itérables (un tableau ou un objet qui liste les éléments)
+/* 2.2 Méthode for of
+
+//Permet de faire un listing de tous les éléments itérables (un tableau ou un objet qui liste les éléments) */
 
 for(let task of tasks) { //On cré une variable (ici task) qui va récupérer un élément à chaque itération, et on renseigne l'objet itérable(tasks)
     console.log(task)
 }
 
-/*On peux utiliser 'for of' sur des objets qui liste des éléments et du coup itérer chacune des valeurs .
+/* On peux utiliser 'for of' sur des objets qui liste des éléments et du coup itérer chacune des valeurs .
 exemple sur la méthode getElementsByTagName() */
 
 const boutons = document.getElementsByTagName('button')
