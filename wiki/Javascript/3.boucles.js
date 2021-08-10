@@ -72,9 +72,9 @@ for(let i=0; i < tasks.length; i++) {
     console.log(tasks[i])
 }
 
-/* 2.1 Méthode foreach
+/* 2.1 Méthode forEach()
 
-Permet d'itérer uniquement des éléments d'un tableau */
+Permet d'itérer uniquement sur des éléments d'un tableau */
 tasks.forEach(tasks => console.log(tasks)) //On renseigne le nom du tableau et les actions à effectuer
 
 /* 2.2 Méthode for of

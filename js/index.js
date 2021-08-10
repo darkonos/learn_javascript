@@ -12,8 +12,11 @@ const clear = document.getElementById('clear');
 const url = document.getElementById('url');
 const load = document.getElementById('load');
 
-// 0. On récupère le tableau des tâches deja existantes
-const tasks = ['Salle de sport', 'Tourner des tutos'];
+// 5. Création nouvelle instance pour la clé 'tasks' à partir de la class ArrayStorage
+const storage = new ArrayStorage('tasks')
+
+// 5.1. On récupère le tableau des tâches deja existantes ou un tableau vide
+const tasks = storage.list
 
 // 3. Fonction qui ajoute les tâches au DOM avec un boutton(REMOVE) de suppression auquel on attache un évènement
 function taskToDOM(task) {
@@ -31,12 +34,18 @@ function taskToDOM(task) {
 
          // 3.2 Ajout d'un évènement au bouton (remove)
          remove.addEventListener('click', () => {
+            const value = remove.parentNode.firstChild.textContent
+            storage.remove(value)
             list.removeChild(remove.parentNode); //On supprime l'élément parent de remove (li)
          });
  
          li.appendChild(remove); //Ajout de remove en tant enfant à li
          list.insertBefore(li, list.firstChild); //Ajout de li devant le premier enfant de list
+
+         return true //Si tout s'est passé correctement
      }
+
+        return false //Return une erreur Si task n'est pas un string ou bien si elle est vide
 }
 
 // 2. On ajoute chaque tâches à la liste à puces (méthode traditionelle)
@@ -53,6 +62,10 @@ tasks.forEach(task => taskToDOM(task));
 
 //Fonction qui gère l'ajout de tâche avec le bouton ADD et la touche 'Enter'
 function newTask() {
+    if (storage.list.indexOf(input.value) === -1 && taskToDOM(input.value)) {
+        storage.set(input.value)
+        input.value = '' //on vide le champ input
+    }
     input.focus(); //La méthode focus() permet à un élément de prendre le focus et le garder
 }
 
@@ -64,3 +77,31 @@ input.addEventListener('keydown', e => {
     }
 })
 
+//On supprime la liste du DOM et du navigateur
+clear.addEventListener('click', () => {
+    storage.clear()
+    list.innerHTML = ''
+})
+
+//On gère l'importation des taches
+load.addEventListener('click', () => {
+    fetch(url.value)
+    .then(response => {
+        if (response.ok) {
+            return response.json()
+        }
+        throw new Error(`${response.statusText} (${response.status})`)
+    })
+    .then(tasks => {
+        if (Array.isArray(tasks)) {
+          tasks.forEach(task => {
+            if (storage.list.indexOf(task) === -1 && taskToDOM(task)) {
+                storage.set(task)
+               
+            }
+          })  
+          return 
+        }
+        throw new TypeError(`La réponse n'est pas un tableau JSON (type : `)
+    })
+})
