@@ -4,8 +4,9 @@ Création : 1995 par Brendan Eich qui participera également à la création de 
 Standartisation : 1997 sous le nom ECMAScript
 
 
-- Langage de programmation sous forme de scripts, c’est-à-dire sans phase de compilation du code source vers un langage de plus bas niveau.
-  L’exécution du script sefait directement par le navigateur à partir du code écrit par le développeur.
+- Langage de programmation sous forme de scripts, c’est-à-dire que les données vont être interprétées au fur et à mesure 
+sans phase de compilation du code source vers un langage de plus bas niveau.
+L’exécution du script se fait directement par le navigateur à partir du code écrit par le développeur.
 - Langage interprété (Tous les navigateurs connus possèdent leur interpréteur JavaScript)
 - Langage événementiel, à l’écoute de tous les événements qui peuvent se produire, comme un clic ou une minuterie. À chaque événement 
   intercepté, une action peut être déclenchée.
@@ -69,23 +70,23 @@ Etant exécuté localement à l’intérieur d’un navigateur qui sécurise son
 - Il n’est donc pas possible de cacher son code source au monde extérieur. Le navigateur en a besoin pour l’exécuter, comme il a besoin
   du code HTML pour interpréter et afficher la page.
 
-Coté serveur :
-- le code JavaScript côté serveur n’est pas du tout visible par le monde extérieur. Il s’exécute sur le serveur et retourne du code HTML 
+  Coté serveur :
+  - le code JavaScript côté serveur n’est pas du tout visible par le monde extérieur. Il s’exécute sur le serveur et retourne du code HTML 
   ou des données, le plus souvent au format JSON.
-
-
-/* 3. INTEGRATION D'UN SCRIPT AU SEIN DU DOCUMENT HTML */
-
-<script defer src="monScript.js"></script>
-
-/* Attributs à intégé dans le script
-....................................
-
-Par défaut, quand le navigateur charge le contenu d'une page HTML et qu'il rencontre un fichier Javascript, il va le télécharger ou
-le charger(si déja présent dans le cache du navigateur) et ensuite il va l'éxécuter. Cela bloque le rendu de la page du visiteur et
-le script risque de ne pas fonctionner correctement. 
- 
-
+  
+  
+  /* 3. INTEGRATION D'UN SCRIPT AU SEIN DU DOCUMENT HTML */
+  
+  <script defer src="monScript.js"></script>
+  
+  /* Attributs à intégé dans le script
+  ....................................
+  
+  Par défaut, quand le navigateur charge le contenu d'une page HTML et qu'il rencontre un fichier Javascript, il va le télécharger ou
+  le charger(si déja présent dans le cache du navigateur) et ensuite il va l'éxécuter. Cela bloque le rendu de la page du visiteur et
+  le script risque de ne pas fonctionner correctement. 
+  
+  
 - Attribut defer (A privilégié) : permet de charger ou télécharger le script en parralèle de l'analyse de la page HTML. Le script est
   éxécuté à la fin de l'analyse de la page.
 - Attribut async : permet de charger ou télécharger le script en parralèle de l'analyse de la page HTML. Le soucis c'est que si le 

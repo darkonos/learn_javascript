@@ -11,8 +11,8 @@
   String ou « chaine de caractères » en français ;
 • Number (nombre entier, réel..)
 • Boolean (true, fasle)
-• Null (absence de valeur connue)
-• Undefined (Variable à laquelle on à pas affecté de valeur)
+• Null (absence de valeur connue) 
+• Undefined (Variable déclaré qu'on à pas affecté de valeur) exemple : let arbre;
 • Symbol ()
 • Object (structures complexes qui vont pouvoir stocker plusieurs valeurs en même temps)
 

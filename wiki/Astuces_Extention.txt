@@ -7,6 +7,12 @@
 - open in browser : 
 - VS Color Picker : palette de couleur
 - peek CSS : permet de regarder une classe CSS sans la chercher partout dans le fichier : Ctrl+clique de la sourie
+- live server : permet d'ouvir le code dans le navigateur (go line en bas de VSC)
+- code runner :
+- javascript ES6 :
+- one dark pro :
+- open in browser :
+- bracket pair colorizer : 
 
 Le mode ZEN
 ...........
@@ -16,3 +22,4 @@ Permet de se concentrer sur le code des fichiers ouverts
 - Ctrl+tab : pour naviguer entre les fichiers ouverts
 - Ctrl+p : rechercher des fichiers
 - Ctrl +ù : ouvre un terminal
+- Alt + flèche haut et bas : pour déplacer du code
