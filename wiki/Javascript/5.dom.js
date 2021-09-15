@@ -23,8 +23,8 @@ et propriétés pour nous permettre de manipuler le HTML et le CSS d’une page 
 JS : const articleID = document.getElementById('mon-article'); //On stock l'élément dans une variable
 
 // 1.2 Sélectionner un regroupement éléments HTML qui correspond à une balise précise (ex: article, h1, etc..)
-JS : articleTagName = document.getElementsByTagName('p'); // Tous les paragraphe sont sélectionner
-JS : articleTagName = document.getElementsByTagName('p')[1]; //ici l'indice sélectionne uniquement le 2e paragraphe
+JS : const articleTagName = document.getElementsByTagName('p'); // Tous les paragraphe sont sélectionner
+JS : const articleTagName = document.getElementsByTagName('p')[1]; //ici l'indice sélectionne uniquement le 2e paragraphe
 
 
 // 1.3 Sélectionner tous les éléments html qui ont une certaine classe associé
@@ -47,7 +47,7 @@ JS     : const a = document.querySelectorAll('a');
 Action : a[1].style.fontSize = '25px'; //indice pour le 2e lien 
 
 /* IMPORTANT: 
-     - Quand on récupère un élément, on le stocke dans une variable ouo constante et ensuite on apllique différentes actions
+     - Quand on récupère un élément, on le stocke dans une variable ou une constante et ensuite on apllique différentes actions
      - Pour getElementByID et querySelector qui sélectionne un seul élément. Dans le document html, seul le premier élément qui correspond à la recherche sera sélectionner
        les autres seront ignorés.
      - Pour getElementsByTagName, getElementsByClassName et querySelectorAll, ils vont sélectionner tous les éléments correspondant à la recherche et seront mis dans un tableau

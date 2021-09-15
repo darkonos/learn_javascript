@@ -9,7 +9,7 @@ son code en groupant des éléments cohérents au sein d’objets
 - Méthode     : fonction qui appartient à un objet
 
 Un objet est donc un conteneur qui va posséder un ensemble de propriétés(variables) et
-de méthodes(fonctions) qu’il est cohérent de regrouper.
+de méthodes(fonctions).
 
 Chaque membre d’un objet est toujours composé d’un nom et d’une valeur qui sont séparées par :
 

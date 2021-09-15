@@ -21,6 +21,6 @@ ensuite on pointe le lien
 target="_blank" : pour ouvrir dans une nouvelle page
 
 IMPORTANT
-Un id doit être unique, dans une même page plusieurs éléments ne doivent pas posséder le même id.
+Le nom d'un id doit être unique dans une page. on a pas le droit de dupliquer cet id dans la même page.
 2 éléments peuvent avoir le même id dans des pages différentes.
 

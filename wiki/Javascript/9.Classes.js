@@ -11,7 +11,7 @@ Tous les objets sont créés à partir de classes et vont hériter des propriét
 
 
 /* 2.1 Création d'une classe et créé des objets à partir de cette classe 
-L'intérêt de créé des objets à partir d'une class c'est de pouvoir créé très facilement plusieurs à partir de cette même classe */ 
+L'intérêt de créé des objets à partir d'une classe c'est de pouvoir créé très facilement plusieurs objet à partir de cette même classe */ 
 
 class User { //Par convention le nom de la classe commence par une majuscule
   
@@ -33,6 +33,7 @@ class User {
     }
 }
 
+//Création d'une nouvel instance de la classe User à l'aide du mot clé 'new'
 const georges = new user('Georges', 'george@gmail.com');
 const steven = new user('Steven', 'steven@gmail.com');
 
