@@ -1,5 +1,25 @@
 /*......LES OBJETS........
 
+Un objet est associé à un type, appelé classe de l’objet, définissant la structure des propriétés et ses fonctionnalités.
+
+ Un objet, appelé instance, contient les données liées à la structure.
+
+- Classe : définit la structure des propriétés, leur type, des méthodes disponibles de l’objet.
+
+- Propriété : nom de variable et sa valeur associée à un objet
+
+- Méthode : fonction associée à un objet
+
+- Constructeur : fonction qui organise la structure de l’objet en définissant les propriétés et les méthodes
+
+- This : le mot clé qui fait référence à l’instance de l’objet en cours de construction.
+
+- Instance : contient les données liées à la classe
+
+- Héritage : désigne la transmission automatique de propriétés et de méthodes d’un objet père vers un objet fils. 
+  Ce principe évite la duplication de code.
+
+
 Les objets partargent deux caractéristiques : état (propriétés ou attributs) et comportement (méthodes ou procédure).
 
 Le développement orienté objet correspond à une autre façon d’envisager et d’organiser
